@@ -1,0 +1,693 @@
+$ptsans: 'PT Sans', 'Open Sans', Tahoma, sans-serif
+$red: #cc0000
+
+@import "../../src/assets/assets.css";
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700&subset=cyrillic');
+
+body
+    margin: 0
+    padding: 0
+    font-size: 19px
+    font-family: $ptsans
+    position: relative
+*
+    margin: 0
+    padding: 0
+    max-height: auto
+input
+    outline: none
+a
+    color: inherit
+    text-decoration: none
+.btn, a, input[type="submit"]
+    transition: .2s linear
+ul
+    list-style-type: none
+header
+    height: 100vh
+    min-height: 780px
+    max-height: 930px
+    background: url(../images/bg.png) no-repeat
+    background-size: cover
+    background-attachment: fixed
+    padding: 35px 0 40px
+nav .logo
+    width: 183px
+    height: 93px
+    background: url(../images/logo.png) no-repeat center center
+    display: inline-block
+ul.menu, ul.menu li
+    display: inline-block
+ul.menu
+    color: #fff
+    margin-top: 15px
+    > li
+        position: relative
+        line-height: 12px
+        margin: 0 22px
+        &:before
+            display: none
+            position: absolute
+            content: ''
+            bottom: -10px
+            width: 35px
+            height: 2px
+            background-color: #fff
+        &:hover:before, &.active-item:before
+            display: block
+.btn.call
+    padding: 4px 8px
+    text-align: center
+    background-color: $red
+    border: 2px solid $red
+    font-weight: 700
+    text-transform: uppercase
+    cursor: pointer
+    float: right
+    &:hover
+        background-color: rgba(255,255,255,0)
+        border-color: #fff
+.call-me
+    color: #fff
+    text-align: right
+    margin-top: 15px
+    p
+        font-weight: 700
+        font-size: 0.88em
+        &:nth-child(3)
+            margin-bottom: 10px
+.stands
+    flex-direction: column
+    color: #fff
+    padding: 40px 40px 20px
+    width: 750px
+    margin: 30px auto 0
+    position: relative
+    &:before, &:after
+        position: absolute
+        content: ''
+        display: block
+        width: 110px
+        height: 110px
+    &:before
+        border-left: 2px solid #fff
+        border-bottom: 2px solid #fff
+        left: 0
+        bottom: 0
+    &:after
+        border-right: 2px solid #fff
+        border-top: 2px solid #fff
+        right: 0
+        top: 0
+    ul
+        font-size: 1.16em
+        margin-top: 26px
+        li
+            position: relative
+            margin: 19px 0
+        li:before
+            content: ''
+            display: inline-block
+            position: absolute
+            top: 5px
+            left: -26px
+            font-size: 0.82em
+            font-family: 'FontAwesome'
+            color: #ed1c24
+.get-layouts
+    text-transform: uppercase
+    color: #fff
+    padding-top: 70px
+    padding-bottom: 40px
+    h3
+        text-align: center
+.get-layouts, .contacts
+    form
+        margin-top: 25px
+    input
+        font-size: 0.95em
+        text-transform: uppercase
+        border: none
+        padding: 9px 0
+        margin-right: 35px
+        margin-bottom: 10px
+    input[type="submit"]
+        text-align: center
+        background-color: $red
+        border: 2px solid $red
+        color: #fff
+        font-weight: 700
+        cursor: pointer
+        &:hover
+            background-color: rgba(255,255,255,0)
+            border-color: #fff
+    input[type="text"]
+        padding-left: 22px
+.modal
+    width: 100%
+    height: 100%
+    position: fixed
+    z-index: 9999
+    background-color: rgba(121,119,119,.85)
+    display: flex
+    align-items: center
+    justify-content: center
+    .inner
+        position: relative
+        &:before, &:after
+            position: absolute
+            content: ''
+            display: block
+            width: 110px
+            height: 110px
+            z-index: -1
+        &:before
+            border-left: 2px solid #fff
+            border-bottom: 2px solid #fff
+            left: -40px
+            bottom: -40px
+        &:after
+            border-right: 2px solid #fff
+            border-top: 2px solid #fff
+            right: -40px
+            top: -40px
+    form > div
+        display: inline-block
+        vertical-align: middle
+        span
+            display: block
+            color: #fff
+            font-weight: 700
+            font-size: 0.7em
+            max-width: 150px
+            text-align: center
+            margin-top: 8px
+    p
+        text-align: center
+        font-size: 0.89em
+        color: #fff
+        margin-bottom: 30px
+    input
+        border: none
+        padding: 12px 0
+        font-size: 0.73em
+        margin: 0 10px
+        &::-webkit-input-placeholder
+            color: #6b6b6b
+        ::-moz-placeholder
+            color: #6b6b6b
+        :-moz-placeholder
+            color: #6b6b6b
+        :-ms-input-placeholder
+            color: #6b6b6b
+    textarea
+        resize: none
+        font-family: inherit
+        vertical-align: middle
+        border: none
+        padding: 8px 5px 5px 20px
+        width: 230px
+    input[type="text"]
+        padding-left: 30px
+    input[type="submit"]
+        background-color: $red
+        border: 2px $red solid
+        padding: 10px 15px
+        text-transform: uppercase
+        color: #fff
+        font-weight: 700
+        cursor: pointer
+        &:hover
+            border-color: #fff
+            background: none
+    i
+        float: right
+        cursor: pointer
+section h2
+    font-family: 'Roboto Condensed'
+    font-weight: 700
+    text-transform: uppercase
+    font-size: 2.1em
+    position: relative
+    display: inline-block
+    margin: 0 auto
+    &:before, &:after
+        position: absolute
+        content: ''
+        display: inline-block
+        height: 2px
+        width: 72px
+        top: 50%
+        margin-top: -1px
+        background-color: #252525
+    &:before
+        left: -122px
+    &:after
+        right: -122px
+section .container > p
+    font-weight: 700
+    text-transform: uppercase
+    line-height: 1.2em
+    margin-top: 50px
+section .container p span.bold
+    font-weight: 700
+.offer
+    padding: 60px 0 140px
+    text-align: center
+    color: #252525
+    background: url(../images/bg1.png) no-repeat
+    background-size: contain
+    > .container > .row
+        margin-top: 55px
+    > .container > .row > .col-md-4
+        padding-left: 42px
+        padding-right: 42px
+    .preview-offer
+        cursor: pointer
+        img
+            width: 100%
+        + p
+            line-height: 1.1em
+            margin-top: 30px
+            margin-bottom: 30px
+            letter-spacing: -0.5px
+            .bold
+                letter-spacing: 0
+    .get-brief + p
+        margin-top: 50px
+    .btn-red
+        margin-top: 35px
+.btn-red
+    padding: 7px 15px
+    background-color: $red
+    display: inline-block
+    text-transform: uppercase
+    color: #fff
+    font-weight: 700
+    cursor: pointer
+.projects
+    background: url(../images/bg2.png) no-repeat
+    background-size: cover
+    color: #fff
+    text-align: center
+    padding-bottom: 90px
+    h2
+        margin-top: 55px
+    h2:before, h2:after
+        background-color: #fff
+    .container > p
+        max-width: 850px
+        margin-left: auto
+        margin-right: auto
+.slider-projects
+    margin-top: 150px
+    .slide
+        text-align: left
+        padding: 0 70px 0 90px
+        .col-lg-6 > .row
+            justify-content: space-between
+            align-items: center
+        > .col-lg-6
+            padding: 0 40px
+        p
+            margin-top: 35px
+    .short-desc
+        text-align: right
+        max-width: 250px
+    span
+        display: block
+        font-size: 0.68em
+        font-style: italic
+    .finish-img 
+        margin-top: 35px
+        img
+            width: 100%
+    .preview-images 
+        width: 75%
+        margin-top: 15px
+        img
+            width: 100%
+        > div
+            padding: 7px 10px 0
+            border-top: 2px solid #c6c6c6
+            &.active-img
+                border-color: $red
+                border-width: 5px
+                margin-top: -3px
+    .im-heading
+        text-transform: uppercase
+        font-weight: 700
+        display: inline-block
+        padding-right: 10px
+        padding-bottom: 6px
+        border-bottom: 2px solid #fff
+    p
+        font-size: 0.84em
+    .review
+        span
+            color: #9d9d9d
+            float: right
+            margin-top: 75px
+    .owl-prev.disabled, .owl-next.disabled
+        background-color: rgba(255,255,255,.15)
+.owl-prev, .owl-next
+    width: 72px
+    height: 75px
+    background-image: url(../images/arrows.png)
+    background-repeat: no-repeat
+    background-color: #fff
+    border-radius: 50%
+    position: absolute
+    top: 50%
+    margin-top: -37.5px
+.owl-prev
+    background-position: -72px center
+    left: 0
+.owl-next
+    right: 0
+.virtual
+    color: #252525
+    text-align: center
+    padding: 50px 0
+    background: url(../images/bg3.png) no-repeat
+    background-size: contain
+    h2
+        max-width: 680px
+    .container > p
+        margin-top: 30px
+    .container > p:nth-child(2)
+        margin-top: 90px
+.features
+    justify-content: space-between
+    margin-top: 70px
+.feature
+    text-align: left
+    align-items: center
+    p
+        font-weight: 700
+    span
+        line-height: 22px
+        display: inline-block
+        margin-top: 5px
+    img
+        width: 100%
+.examples
+    background-color: #f1f2f4
+    text-align: center
+    padding-bottom: 90px
+    h2
+        margin-top: 22px
+        font-size: 1.57em
+        color: #252525
+        &:before, &:after
+            display: none
+.slider-examples 
+    margin-top: 35px
+    .slide > div.col-lg-4
+        padding-top: 15px
+        padding-bottom: 15px
+    .slide
+        padding-left: 90px
+        padding-right: 90px
+        > .row
+            padding-top: 10px
+            padding-left: 30px
+            padding-right: 30px
+            > div
+                padding-left: 0
+                padding-right: 0
+    .slide img
+        cursor: pointer
+        filter: brightness(100%)
+        transition: .2s linear
+        &:hover
+            filter: brightness(35%)
+.find-cost
+    margin-top: 40px
+section.examples
+    p
+        text-transform: none
+        font-weight: 400
+    .find-cost
+        margin-top: 40px
+input.layout
+    display: none
+.cost-form
+    form p
+        color: #252525
+        text-align: right
+        cursor: default
+        span
+            font-family: 'FontAwesome'
+            padding-right: 5px
+            transform: rotate(90deg)
+            display: inline-block
+            vertical-align: middle
+    .inner > p
+        font-size: 1.15em
+        font-weight: 700
+        span
+            display: block
+            font-size: 0.8em
+            font-weight: normal
+section.why
+    text-align: center
+    color: #252525
+    padding: 60px 0
+    background: url(../images/bg4.png) no-repeat
+    background-size: contain
+    .row > div
+        margin-bottom: 90px
+    .row
+        margin-top: 50px
+        p
+            margin-top: 25px
+    > .container > p
+        margin-top: 0
+section.kinds
+    padding: 30px 0 130px
+    background-color: #f1f2f4
+    .container > .row
+        margin-top: 125px
+section.kinds, section.additional
+    text-align: center
+    color: #252525
+    img
+        width: 100%
+    .container > .row:nth-child(2)
+        align-items: center
+        > div
+            position: relative
+            margin-top: 30px
+            margin-left: auto
+            margin-right: auto
+            transform: scale(1,1)
+            transition: .2s linear
+            &:hover
+                transform: scale(1.1,1.1)
+        > div > a div
+            position: absolute
+            top: 0
+            color: #fff
+            top: 50%
+            left: 50%
+            transform: translate(-50%,-50%)
+            h3
+                font-size: 1.08em
+                text-transform: uppercase
+                line-height: 40px
+            p
+                font-size: 0.58em
+                max-width: 245px
+                line-height: 18px
+section.additional
+    padding-bottom: 30px
+    background: url(../images/bg5.png) no-repeat
+    background-size: contain
+    h2
+        margin-top: 30px
+        font-size: 1.57em
+        color: #252525
+        &:before, &:after
+            display: none
+    span
+        display: block
+        text-align: left
+        margin-top: 30px
+        margin-left: 50px
+        text-transform: uppercase
+        font-weight: 700
+        font-size: 1.05em
+        position: relative
+        line-height: 24px
+        &:before
+            display: block
+            position: absolute
+            content: ''
+            font-family: 'FontAwesome'
+            top: 0
+            left: -36px
+            font-weight: normal
+    .col-lg-4 span:last-child
+        margin-top: 10px
+section.production
+    text-align: center
+    background: url(../images/bg6.png) no-repeat
+    background-size: cover
+    color: #fff
+    padding: 60px 0 100px
+    h2:before, h2:after
+        background-color: #fff
+    .video-info
+        text-align: left
+        font-size: 0.84em
+        margin-top: 60px
+        align-items: center
+        p
+            margin: 15px 0
+            line-height: 28px
+        .video
+            width: 100%
+section.advantages
+    text-align: center
+    background: url(../images/bg7.png) no-repeat
+    background-size: contain
+    .container > p
+        margin-bottom: 70px
+    .row
+        max-width: 65%
+        margin-left: auto
+        margin-right: auto
+        div > p
+            line-height: 20px
+            margin-top: 25px
+        > div
+            margin-bottom: 65px
+            margin-left: auto
+            margin-right: auto
+section.working
+    background-color: #f1f2f4
+    padding: 60px 0 90px
+    text-align: center
+    .row
+        margin-top: 70px
+        position: relative
+        &:after
+            position: absolute
+            display: block
+            content: ''
+            width: calc(100% - 40px)
+            margin-left: 20px
+            height: 3px
+            top: 50%
+            margin-top: -1.5px
+            background-color: $red
+        img
+            width: 100%
+            height: 100%
+        .col-lg-3
+            min-height: auto
+            padding-left: 20px
+            padding-right: 20px
+            z-index: 99
+    .row:nth-child(2)
+        .col-3
+            &:last-child
+                position: relative
+                &:after
+                    position: absolute
+                    display: block
+                    content: ''
+                    width: 3px
+                    height: 80px
+                    left: 50%
+                    bottom: -80px
+                    margin-left: -1.5px
+                    background-color: $red
+    .row:nth-child(3)
+        .col-3
+            &:last-child
+                &:after
+                    display: none
+            &:first-child
+                position: relative
+                &:after
+                    position: absolute
+                    display: block
+                    content: ''
+                    width: 3px
+                    height: 80px
+                    left: 50%
+                    bottom: -80px
+                    margin-left: -1.5px
+                    background-color: $red
+    .btn-red
+        margin-top: 40px
+.technologies
+    text-align: center
+    padding: 60px 0 90px
+    background: url(../images/bg8.png) no-repeat
+    background-size: cover
+    color: #fff
+    h2:before, h2:after
+        background-color: #fff
+.videos
+    > div
+        max-width: 500px
+        margin-top: 60px
+        margin-left: auto
+        margin-right: auto
+        .plyr__controls .plyr__time, .plyr--captions-enabled [data-plyr="captions"], .plyr--fullscreen-enabled [data-plyr="fullscreen"]
+            display: none
+        .plyr .plyr__volume
+            max-width: 50px
+        .plyr__play-large
+            padding: 15px
+            svg
+                width: 25px
+                height: 25px
+        p
+            margin-top: 30px
+            font-weight: 700
+.clients
+    text-align: center
+    padding: 60px 0 10px
+    background-color: #f1f2f4
+    color: #252525
+    .row
+        align-items: center
+        .col
+            margin: 60px auto
+            padding: 0 40px
+            cursor: pointer
+.contacts
+    text-align: center
+    padding: 60px 0 30px
+    color: #252525
+    background: url(../images/bg9.png) no-repeat
+    background-size: contain
+    .row:nth-child(2)
+        margin-top: 60px
+    .col-lg-3
+        margin-top: 10px
+        p
+            font-size: 0.84em
+            margin-top: 30px
+    input[type="text"]
+        border: #6b6b6b 1px solid
+    input[type="submit"]
+        padding: 8px 24px
+        &:hover
+            border-color: #6b6b6b
+            color: #6b6b6b
+    form
+        margin-top: 40px
+#map
+    width: 100%
+    height: 390px
+    .gotoymaps__text, .ymaps-2-1-50-copyright.ymaps-2-1-50-copyright_logo_no, .ymaps-2-1-50-controls__bottom, .ymaps-2-1-50-controls__toolbar
+        display: none
+footer
+    height: 78px
+    background-color: #252525

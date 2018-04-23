@@ -1,0 +1,8 @@
+@media (max-width:1129px){.steps .item + .item:after{top:-40px;left:-92px;width:170px;}
+.steps .link:after{top:-48px;left:-92px;width:170px;}
+.products .tabs li{font-size:15px;}
+.videos .cont{padding:0;}
+.schema .item + .item:before,
+.schema .line + .line .item + .item:before,
+.schema .line + .line .item:before{left:-108px;}
+}

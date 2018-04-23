@@ -1,0 +1,146 @@
+$light: 'PFBeauSansPro-Light', Helvetica, Arial, sans-serif
+$thin: 'PFBeauSansPro-Thin', Helvetica, Arial, sans-serif
+$reg: 'PFBeauSansPro-Reg', Helvetica, Arial, sans-serif
+$pink: #ed5388
+@import "../../src/assets/assets.css";
+
+body
+    margin: 0
+    padding: 0
+    font-family: $light
+    font-size: 17px
+*
+    margin: 0
+    padding: 0
+a
+    color: inherit
+    text-decoration: none
+a, .button, div
+    transition: .3s ease-in-out
+header .inner
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &:before
+        content: ''
+.header-img img
+    height: 100%
+.logo
+    padding: 40px
+.gradient
+    height: 35px
+    background: linear-gradient(to right, #ff9000 0%,#ff0081 50%,#006fba 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9000', endColorstr='#006fba',GradientType=1 )
+    color: #fff
+    font-family: $reg
+    .container
+        height: 100%
+        display: flex
+        justify-content: flex-end
+        align-items: center
+.button
+    display: block
+    background-color: $pink
+    width: 110px
+    border-radius: 10px
+    color: #fff !important
+    padding: 5px 0
+    font-family: $reg !important
+    margin: 0 auto
+    &:hover
+        background-color: #d44878
+.range
+    padding-bottom: 30px
+    height: 100vh
+    min-height: 670px
+    max-height: 770px
+    img
+        width: 120px
+        height: 120px
+        margin-right: 27px
+        flex-shrink: 0
+    p
+        margin-bottom: 5px
+        font-family: $reg
+        font-size: 1.35em
+    span
+        font-size: 1.03em
+    .col-lg-6
+        margin-top: 60px
+        display: flex
+section h2
+    font-size: 1.94em
+    font-family: $reg
+    font-weight: normal
+    margin: 10px 0
+.select-city
+    padding: 0 0 20px 0
+    text-align: center
+.cities, .kinds
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    p
+        font-size: 1.66em
+        color: #414141
+    span
+        font-size: 1em
+        color: #606060
+    .button
+        opacity: 0
+.city
+    align-items: flex-end
+    width: 230px
+    padding: 0 0 15px
+    height: 140px
+    margin: 2px 30px
+    span
+        font-family: $thin
+.kind
+    width: 330px
+    padding: 10px 0
+    height: 190px
+    margin: 20px 50px
+    span
+        font-family: $reg
+        height: 65px
+        display: block
+        margin: 10px 0 17px
+.city, .kind
+    border-radius: 6px
+    display: flex
+    justify-content: center
+    &:hover
+        box-shadow: 1px 1px 10px #cecece
+.city.following, .kind
+    &:hover
+        p
+            color: #e3087f
+        .button
+            opacity: 1
+.cooperation
+    text-align: center
+    background-color: #f6f4f4
+    padding: 10px 0
+.map
+    width: 100%
+    min-height: 500px
+    height: calc(100vh - 135.2px)
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    img
+        height: 100%
+.footer
+    font-family: $reg
+    .container
+        padding: 20px 0
+        display: flex
+        justify-content: space-between
+        align-items: center
+    p
+        font-size: 1.66em
+        background: -webkit-linear-gradient(left, #c21d95 0%, #8e39a1 100%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        color: #8e39a1

@@ -1,0 +1,415 @@
+@charset "UTF-8";
+@import url(../../src/assets/grid.min.css);
+@import url(../../src/assets/assets.css);
+body { margin: 0; padding: 0; font-size: 17px; font-family: "Museo Sans Cyrl 500", Arial, sans-serif; color: #6c6c6c; overflow-x: hidden; position: relative; }
+
+* { margin: 0; padding: 0; }
+
+a { color: inherit; text-decoration: none; }
+
+i { font-weight: normal; font-style: normal; }
+
+li { list-style-type: none; display: inline-block; }
+
+h1, h2, h3, h4 { font-weight: normal; font-style: normal; }
+
+input:focus, textarea:focus { outline: none; }
+
+.button, .li-button { cursor: pointer; -webkit-transition: .3s ease-in-out; transition: .3s ease-in-out; }
+
+.button { background: -webkit-gradient(linear, left top, left bottom, from(#ed95ab), color-stop(51%, #e6315e)); background: -webkit-linear-gradient(top, #ed95ab 0%, #e6315e 51%); background: linear-gradient(to bottom, #ed95ab 0%, #e6315e 51%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed95ab', endColorstr='#e6315e',GradientType=0 ); display: inline-block; border: 5px solid #ebd4da; -webkit-box-shadow: inset 1px 1px 20px #9d2443; box-shadow: inset 1px 1px 20px #9d2443; padding: 22px 0; width: 360px; -webkit-border-radius: 40px; border-radius: 40px; font-family: "Museo Sans Cyrl 900", Arial, sans-serif; color: #fff; font-size: 1em; }
+
+.button:hover { border-color: #b2abad; background: -webkit-gradient(linear, left top, left bottom, from(#d85a7a), color-stop(51%, #ce2c55)); background: -webkit-linear-gradient(top, #d85a7a 0%, #ce2c55 51%); background: linear-gradient(to bottom, #d85a7a 0%, #ce2c55 51%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d85a7a', endColorstr='#ce2c55',GradientType=0 ); }
+
+.li-button { margin-left: 30px; padding: 12px 30px; border: 1px solid #fff; -webkit-border-radius: 20px; border-radius: 20px; }
+
+.li-button:hover { color: #e24c73; background-color: #fff; }
+
+.heading { padding: 26px 0 60px; text-align: center; background: url(../images/header-bg.png) no-repeat; background-size: cover; background-attachment: fixed; color: #fff; }
+
+.phone { font-family: "Museo Sans Cyrl 900", Arial, sans-serif; font-size: 1.33em; margin-top: 10px; }
+
+.inner-border { width: 755px; height: 360px; background: url(../images/border-head.png) no-repeat; background-size: contain; position: absolute; left: 50%; margin-left: -377.5px; top: 0; }
+
+header .button { border-color: #b7b7b4; }
+
+.title-header { height: 360px; position: relative; z-index: 9; padding-top: 80px; margin-top: 70px; }
+
+.title-header:before { display: block; content: ''; width: 150px; height: 48px; background: url(../images/logo.png) no-repeat; background-size: contain; position: absolute; left: 50%; margin-left: -75px; top: 22px; }
+
+.title-header:after { display: block; content: ''; width: 755px; height: 360px; background: url(../images/border-head.png) no-repeat; background-size: contain; position: absolute; left: 50%; margin-left: -377.5px; top: 0; z-index: -1; }
+
+.title-header h1 { font-family: "PF Agora Slab Pro Black", Arial Black, sans-serif; font-size: 2.55em; text-transform: uppercase; line-height: 55px; }
+
+.title-header h2 { font-family: "PF Agora Slab Pro Black", Arial Black, sans-serif; font-size: 3.44em; text-transform: uppercase; line-height: 70px; }
+
+.title-header p { font-family: "Museo Sans Cyrl 300", Arial, sans-serif; font-size: 1.61em; letter-spacing: 1px; line-height: 35px; margin-top: 10px; }
+
+.heading .button { margin-top: 40px; }
+
+.features > div { display: inline-block; margin: 0 90px; }
+
+.features { margin-top: 40px; }
+
+.features p { margin-top: 8px; font-size: 1.05em; line-height: 27px; }
+
+.features .icon { width: 40px; height: 40px; background: url(../images/icons.png); background-position-y: center; margin: 0 auto; }
+
+.features > div:nth-child(2) .icon { background-position-x: -40px; }
+
+.features > div:nth-child(3) .icon { background-position-x: -80px; }
+
+nav { min-height: 70px; background-color: #e24c73; color: #fff; position: fixed; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; top: 0; width: 100%; z-index: 99999; }
+
+nav li, nav p, nav .li-button, nav .other-li { display: inline-block; }
+
+nav ul { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+
+nav > div { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; width: 100%; padding: 0 15px; }
+
+nav li { border-bottom: 1px solid rgba(255, 255, 255, 0); -webkit-transition: .3s ease-in-out; transition: .3s ease-in-out; padding-bottom: 5px; }
+
+nav li:hover { border-color: white; }
+
+nav li:not(:last-child) { margin-right: 30px; }
+
+nav li, nav .li-button { font-family: "Museo Sans Cyrl 700", Arial, sans-serif; font-size: 0.77em; letter-spacing: 1.4px; }
+
+nav .menu-phone { font-family: "Museo Sans Cyrl 900", Arial, sans-serif; font-size: .88em; }
+
+/* === Модальные окна === */
+.modal { position: fixed; background-color: rgba(0, 0, 0, 0.67); display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; width: 100%; height: 100vh; z-index: 999999; text-align: center; }
+
+.modal .close-modal { position: absolute; right: 20px; top: 20px; font-family: 'fontello'; color: #5c5c5c; cursor: pointer; }
+
+.modal h1 { text-transform: uppercase; color: #444; font-size: 2.11em; font-family: "Museo Sans Cyrl 900", Arial, sans-serif; letter-spacing: 1px; }
+
+.modal p { color: #6c6c6c; font-size: 1.33em; font-family: "Museo Sans Cyrl 300", Arial, sans-serif; letter-spacing: 1.5px; margin-top: 8px; line-height: 30px; }
+
+.modal input { display: block; width: 100%; }
+
+.modal input[type="text"] { font-family: "Museo Sans Cyrl 500", Arial, sans-serif; color: #7c7c7c; font-size: 1.33em; padding: 16px 30px; border: 4px solid #d8d8d8; -webkit-border-radius: 35px; border-radius: 35px; margin-top: 30px; }
+
+.modal .button { border-color: #ebd4da; margin-top: 22px; }
+
+.inner-modal { position: relative; padding: 75px 95px 85px; background-color: #fff; border: 5px solid #fff; -webkit-border-radius: 6px; border-radius: 6px; -webkit-box-shadow: 0 0 38px rgba(166, 166, 166, 0.19), inset 0 0 9px rgba(0, 0, 0, 0.23); box-shadow: 0 0 38px rgba(166, 166, 166, 0.19), inset 0 0 9px rgba(0, 0, 0, 0.23); }
+
+/* === Общие стили для экранов === */
+section { text-align: center; }
+
+section span { display: inline-block; }
+
+section h1, section h2, section h3 { line-height: 50px; }
+
+section h1 { font-family: "PF Agora Slab Pro Black", Arial Black, sans-serif; text-transform: uppercase; font-size: 2.77em; color: #ffdb01; }
+
+section h2 { font-family: "PF Agora Slab Pro Regular", Arial, sans-serif; font-size: 2.55em; color: #5b5b5b; }
+
+section h3 { font-family: "PF Agora Slab Pro Black", Arial Black, sans-serif; font-size: 2.55em; color: #6c6c6c; }
+
+section .underline { position: relative; }
+
+section .underline:after { display: block; position: absolute; left: 50%; bottom: -30px; margin-left: -49px; content: ''; width: 98px; height: 8px; background-color: #ffdb01; }
+
+/* Стили для "Особенности наших кухонь" */
+#features { padding: 30px 0 115px; background: url(../images/features-bg.png) no-repeat center center; background-size: cover; }
+
+#features .row { margin-top: 100px; }
+
+#features p { color: #444; font-family: "PF Agora Slab Pro Black", Arial Black, sans-serif; font-size: 1.11em; }
+
+#features .col-lg-4 { padding-left: 40px; padding-right: 40px; }
+
+#features span { color: #6c6c6c; font-family: "Museo Sans Cyrl 300", Arial, sans-serif; line-height: 25px; margin-top: 5px; }
+
+#features .yellow-icon { width: 88px; height: 88px; background: url(../images/yellow-icons.png) no-repeat; background-position-y: center; margin: 0 auto; margin-bottom: 25px; }
+
+#features .col-lg-4:nth-child(2) .yellow-icon { background-position-x: -88px; }
+
+#features .col-lg-4:last-child .yellow-icon { background-position-x: -176px; }
+
+/* "Специальное предложение" */
+.offer { padding: 100px 0 110px; }
+
+/* "Все для вашего комфорта" */
+.everything { background: url(../images/every-bg.png) no-repeat center center; background-size: cover; background-attachment: fixed; padding: 110px 0 140px; }
+
+.everything .container { z-index: 1; }
+
+.everything .row { margin: 35px auto; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+
+.everything .row.first-row { margin-top: 97px; }
+
+.everything .thing { width: 436px; height: 177px; text-align: left; padding: 40px; background: url(../images/substrate.png); margin-right: 50px; }
+
+.everything p { font-size: 1.22em; font-family: "Museo Sans Cyrl 900", Arial, sans-serif; color: #444; }
+
+.everything span { font-family: "Museo Sans Cyrl 300", Arial, sans-serif; color: #6c6c6c; line-height: 24px; margin-top: 10px; }
+
+.everything .last-row .thing:first-child { margin-left: 95px; position: relative; }
+
+.everything .last-row .thing:first-child:before { display: block; content: ''; position: absolute; left: -130px; bottom: -90px; width: 200px; height: 300px; background: url(../images/rozmarin.png) no-repeat center center; background-size: contain; z-index: -1; }
+
+/* "Наши кухни - наша гордость" */
+.offer .bx-wrapper, .pride .bx-wrapper { margin-top: 76px; }
+
+.offer .desc, .pride .desc { font-size: 0.88em; font-family: "Museo Sans Cyrl 500", Arial, sans-serif; }
+
+.offer .price, .pride .price { color: #f5d200; font-size: 1.16em; margin-top: 4px; font-family: "Museo Sans Cyrl 900", Arial, sans-serif; }
+
+.offer .bx-wrapper, .pride .bx-wrapper { margin-left: auto; margin-right: auto; }
+
+.offer .slide, .pride .slide { padding: 20px; }
+
+.offer .image img, .pride .image img { width: 100%; }
+
+.offer .image, .pride .image { width: 100%; border: 10px solid #fff; display: inline-block; -webkit-border-radius: 8px; border-radius: 8px; -webkit-box-shadow: 1px 1px 20px rgba(180, 180, 180, 0.25); box-shadow: 1px 1px 20px rgba(180, 180, 180, 0.25); margin-top: 10px; }
+
+.offer .button, .pride .button { margin-top: 45px; }
+
+.offer .bx-pager.bx-default-pager, .pride .bx-pager.bx-default-pager { color: #6c6c6c; font-size: 0.88em; margin-top: 25px; }
+
+.offer .bx-wrapper .bx-controls-direction a, .pride .bx-wrapper .bx-controls-direction a { width: 45px; height: 45px; -webkit-border-radius: 50%; border-radius: 50%; background-color: #ededed; margin-top: -22.5px; font-family: 'fontello'; color: #6c6c6c; font-size: 1.38em; padding-top: 7px; -webkit-transition: .3s ease-in-out; transition: .3s ease-in-out; }
+
+.offer .bx-wrapper .bx-controls-direction a:hover, .pride .bx-wrapper .bx-controls-direction a:hover { background-color: #ffe64c; -webkit-box-shadow: 1px 7px 10px rgba(151, 132, 16, 0.25); box-shadow: 1px 7px 10px rgba(151, 132, 16, 0.25); }
+
+.pride { padding: 75px 0 120px; }
+
+.pride .select-kitchen { margin-top: 70px; }
+
+.pride ul { display: inline-block; -webkit-border-radius: 30px; border-radius: 30px; border: 2px solid #ffe64c; }
+
+.pride li { cursor: pointer; padding: 16px 30px; color: #b2b2b2; font-size: .88em; -webkit-border-radius: 30px; border-radius: 30px; }
+
+.pride li:hover { color: #444; }
+
+.pride li.active { background-color: #ffe64c; -webkit-box-shadow: 0 3px 6px rgba(65, 56, 0, 0.11); box-shadow: 0 3px 6px rgba(65, 56, 0, 0.11); font-family: "Museo Sans Cyrl 700", Arial, sans-serif; color: #444; }
+
+.pride .bx-wrapper { margin-top: 37px; }
+
+/* "Возникли вопросы?" */
+.consultation { padding: 60px 0 80px; background: url(../images/cons-bg.png) no-repeat center center; background-size: cover; position: relative; }
+
+.consultation h3 { color: #e93260; }
+
+.consultation p { color: #393939; font-size: 1.33em; letter-spacing: 0.5px; margin-top: 12px; }
+
+.consultation div { margin-top: 40px; }
+
+.consultation input[type="text"] { font-family: "Museo Sans Cyrl 500", Arial, sans-serif; color: #585858; font-size: 1.15em; background: none; border: 4px solid #fff; padding: 16px 30px; -webkit-border-radius: 35px; border-radius: 35px; }
+
+.consultation input[type="submit"] { margin-left: 26px; }
+
+.consultation:before { left: 0; bottom: -26px; width: 150px; height: 294px; background: url(../images/coffee_2.png) no-repeat center center; }
+
+.consultation:after { right: 0; top: -150px; width: 280px; height: 403px; background: url(../images/coffee.png) no-repeat center center; }
+
+.consultation:before, .consultation:after { display: block; content: ''; position: absolute; background-size: contain; }
+
+/* "Какая кухня вам нужна?" */
+#unique { background: url(../images/uniq-bg.png) no-repeat center center; background-size: cover; padding: 80px 0; }
+
+#unique .container { background-color: #fff; padding: 50px 0 60px; }
+
+#unique .container > p { color: #393939; font-size: 1.33em; margin-top: 13px; }
+
+.stages { margin-top: 65px; }
+
+.stages p { color: #6c6c6c; font-size: 1.11em; }
+
+.file-upload input[type="file"] { display: none; }
+
+.file-upload label { display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; cursor: pointer; }
+
+.file-upload { position: relative; overflow: hidden; width: 300px; height: 70px; margin-top: 20px; }
+
+.file-upload:hover .btn-input { background-color: #ffdb01; border-color: #ffdb01; color: #444; }
+
+.file-upload span { margin-left: 20px; color: #aeaeae; font-size: 0.82em; }
+
+.stage > div { margin-left: auto; margin-right: auto; }
+
+.btn-input { display: inline-block; color: #6c6c6c; font-family: "Museo Sans Cyrl 300", Arial, sans-serif; padding: 9px 25px; border: 1px solid #6c6c6c; -webkit-border-radius: 20px; border-radius: 20px; -webkit-transition: .3s ease-in-out; transition: .3s ease-in-out; }
+
+.stage { padding: 0 140px; }
+
+.kinds-kitchen { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; width: 100%; margin-top: 37px; }
+
+.kinds-kitchen img { width: 100%; }
+
+.kinds-kitchen .kind-k { width: 174px; height: 140px; display: inline-block; -webkit-border-radius: 3px; border-radius: 3px; border: 3px solid #eee; cursor: pointer; -webkit-transition: .3s linear; transition: .3s linear; }
+
+.kinds-kitchen .kind-k:hover { -webkit-box-shadow: 0 4px 24px rgba(155, 155, 155, 0.27); box-shadow: 0 4px 24px rgba(155, 155, 155, 0.27); }
+
+.kinds-kitchen .kind-k.active { -webkit-box-shadow: none; box-shadow: none; border-color: #ffec79; position: relative; }
+
+.kinds-kitchen .kind-k.active:after { width: 20px; text-align: center; display: block; content: ''; position: absolute; left: 50%; margin-left: -10px; font-size: 1.33em; color: #ffdb01; font-family: 'fontello'; }
+
+.size-kitchen { margin-top: 50px; }
+
+.size-kitchen input { font-size: 0.94em; color: #262626; font-family: "Museo Sans Cyrl 300", Arial, sans-serif; width: 82px; text-align: center; }
+
+.size-kitchen label { display: block; font-size: 0.88em; font-family: "Museo Sans Cyrl 300", Arial, sans-serif; margin-top: 2px; }
+
+.size-kitchen li { margin-top: 23px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+
+.size-kitchen li > div > input + label { margin-bottom: 15px; }
+
+.size-kitchen li div div { display: inline-block; margin: 0 20px; }
+
+.size-kitchen li div * { vertical-align: middle; }
+
+.size-kitchen input[disabled] { border-color: #cbcbcb; background: #fff; color: #cbcbcb; }
+
+.size-kitchen input[disabled] + label { color: #cbcbcb; }
+
+.select-types p { margin-top: 40px; }
+
+.select-types > div { margin-top: 20px; }
+
+.select2-results__option:first-child { display: none; }
+
+.select2-container { color: #6c6c6c; font-size: 0.87em; font-family: "Museo Sans Cyrl 300", Arial, sans-serif; letter-spacing: 0.5px; }
+
+.select2-container:hover .select2-selection__arrow, .select2-container--open .select2-selection__arrow { background: #ffdb01 !important; -webkit-border-radius: 4px; border-radius: 4px; border-left: none !important; }
+
+.select2-container:hover .select2-selection__arrow b, .select2-container--open .select2-selection__arrow b { color: #fff !important; }
+
+.select2-container li { display: block; }
+
+.select-types .select2-container { margin: 10px; }
+
+.options { margin: 30px; }
+
+.options > div { display: inline-block; text-align: left; margin: 20px auto 0; }
+
+.options label { display: block; margin: 4px 0; }
+
+.checkbox { display: none; }
+
+.checkbox-custom { position: relative; width: 20px; height: 20px; border: 1px solid #6c6c6c; -webkit-border-radius: 2px; border-radius: 2px; background-color: #fff; }
+
+.checkbox-custom, .label { display: inline-block; vertical-align: middle; }
+
+.checkbox:checked + .checkbox-custom { background-color: #ffe64c !important; }
+
+.checkbox:checked + .checkbox-custom:before { content: ''; font-size: 14px; display: block; position: absolute; top: -1px; right: 4.5px; color: #6c6c6c; font-family: 'fontello'; }
+
+.options label:hover .checkbox-custom { background-color: #ebebeb; }
+
+.options .label { color: #6c6c6c; font-size: 0.82em; font-family: "Museo Sans Cyrl 300", Arial, sans-serif; letter-spacing: 0.5px; display: inline; }
+
+.wishes form { margin-top: 30px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
+
+.wishes textarea { resize: none; width: 560px; height: 160px; }
+
+.wishes textarea, .wishes input[type="submit"] { display: block; }
+
+.wishes textarea, .wishes input[type="text"] { font-family: "Museo Sans Cyrl 300", Arial, sans-serif; font-size: 0.84em; letter-spacing: 0.5px; padding: 11px 20px; border: none; background-color: #efefef; color: #aeaeae; -webkit-border-radius: 2px; border-radius: 2px; }
+
+.wishes textarea:focus, .wishes input[type="text"]:focus { color: #6c6c6c; border: 1px solid #c5c5c5; }
+
+.wishes input[type="text"] { width: 270px; }
+
+.wishes form > div { width: 560px; margin: 15px 0 0; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+.wishes input[type="submit"] { margin-top: 28px; padding: 22px 70px; width: auto; cursor: pointer; }
+
+/* "4 простых шага до кухни вашей мечты" */
+section.steps { padding: 110px 0 120px; background: url(../images/steps-bg.png) no-repeat center center; background-size: cover; }
+
+section.steps .row { margin-top: 100px; }
+
+section.steps p:first-child { font-size: 0.88em; text-align: left; }
+
+section.steps .col-lg-3 { padding-left: 40px; padding-right: 40px; }
+
+section.steps .col-lg-3 div { position: relative; display: inline-block; margin-left: auto; margin-right: auto; }
+
+section.steps .col-lg-3 div:before { display: block; position: absolute; top: -17px; left: -13px; }
+
+section.steps .col-lg-3:first-child div:before { content: '01.'; }
+
+section.steps .col-lg-3:nth-child(2) div:before { content: '02.'; }
+
+section.steps .col-lg-3:nth-child(3) div:before { content: '03.'; }
+
+section.steps .col-lg-3:nth-child(4) div:before { content: '04.'; }
+
+section.steps img { margin-top: 6px; }
+
+section.steps img + p { font-family: "Museo Sans Cyrl 900", Arial, sans-serif; font-size: 0.88em; color: #444; letter-spacing: 0.5px; margin-top: 9px; }
+
+section.steps span { font-family: "Museo Sans Cyrl 300", Arial, sans-serif; font-size: 0.9em; margin-top: 8px; }
+
+section.steps .button { width: 100%; max-width: 300px; margin-top: 25px; }
+
+section.steps .col-lg-3:not(:first-child) { position: relative; }
+
+section.steps .col-lg-3:not(:first-child):before { display: block; width: 95px; height: 6px; content: ''; position: absolute; top: 60px; left: -55px; background: url(../images/points.png) repeat-x center center; }
+
+/* === Что говорят наши клиенты === */
+.clients { padding: 110px 0 120px; }
+
+.clients iframe { max-width: 100%; }
+
+.clients .row { margin-top: 100px; }
+
+.clients p { font-size: 0.88em; color: #444; font-family: "Museo Sans Cyrl 900", Arial, sans-serif; letter-spacing: 0.4px; margin-top: 28px; }
+
+/* === Контакты === */
+.contacts { background: url(../images/contacts-bg.png) center center; padding: 77px 0 74px; -webkit-box-shadow: inset 0 4px 7px rgba(0, 0, 0, 0.19); box-shadow: inset 0 4px 7px rgba(0, 0, 0, 0.19); }
+
+.inner-contacts { background: url(../images/thing-bg.png) center center; display: inline-block; padding: 55px 100px; border: 5px solid #fff; -webkit-border-radius: 6px; border-radius: 6px; -webkit-box-shadow: inset 0 0 9px rgba(0, 0, 0, 0.23), 0 6px 38px rgba(166, 166, 166, 0.19); box-shadow: inset 0 0 9px rgba(0, 0, 0, 0.23), 0 6px 38px rgba(166, 166, 166, 0.19); position: relative; }
+
+.inner-contacts:before { display: block; content: ''; position: absolute; top: -60px; left: -80px; width: 215px; height: 236px; background: url(../images/pepper.png) no-repeat center center; background-size: contain; }
+
+.inner-contacts img, .inner-contacts p, .inner-contacts div div { display: inline-block; }
+
+.inner-contacts img, .inner-contacts p { vertical-align: middle; }
+
+.inner-contacts div div { padding: 25px; }
+
+.inner-contacts > div { margin-top: 55px; }
+
+.inner-contacts p { color: #a0a0a0; font-family: "Museo Sans Cyrl 700", Arial, sans-serif; font-size: 1.22em; margin-left: 12px; }
+
+/* === Футер === */
+footer { height: 102px; background-color: #4e4e4e; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+
+footer .container { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+
+footer ul { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+
+footer ul li { font-size: 0.84em; color: #d6d6d6; letter-spacing: 0.5px; -webkit-transition: .3s linear; transition: .3s linear; border-bottom: 1px solid transparent; margin: 0 23px; padding-bottom: 4px; }
+
+footer ul li:hover { border-bottom: 1px solid #d6d6d6; }
+
+footer ul li.privacy { color: #a7a7a7; font-size: 0.77em; border: none; text-decoration: underline; margin-left: 47px; margin-right: 30px; cursor: pointer; }
+
+footer ul li.privacy:hover { color: #fff; text-decoration: none; }
+
+footer .vk { width: 28px; height: 28px; background: url(../images/vk-icon.png) no-repeat; border: none !important; -webkit-transition: none !important; transition: none !important; cursor: pointer; }
+
+footer .vk a { width: inherit; height: inherit; display: block; }
+
+footer .vk:hover { background-position: -28px center; }
+
+/* Политика конфиденциальности */
+.want-privacy { text-align: left; }
+
+.want-privacy .inner-modal { max-width: 700px; max-height: 420px; overflow-y: auto; }
+
+.want-privacy h3 { font-family: "Museo Sans Cyrl 900", Arial, sans-serif; color: #444; }
+
+.want-privacy p, .want-privacy li { font-size: 0.83em; color: #6c6c6c; font-family: "Museo Sans Cyrl 300", Arial, sans-serif; letter-spacing: 1.1px; line-height: 20px; }
+
+.want-privacy li { list-style-type: disc; display: list-item; padding-left: 24px; margin-left: 15px; margin-top: 3px; }
+
+.want-privacy h3:not(:first-child) { margin-top: 45px; }
+
+.want-privacy p:last-child { margin-bottom: 75px; }
+
+.totop { width: 68px; height: 68px; background-color: #df3b65; -webkit-border-radius: 50%; border-radius: 50%; -webkit-transition: .3s ease-in-out; transition: .3s ease-in-out; cursor: pointer; font-family: 'fontello'; color: #fff; text-align: center; padding-top: 21px; position: absolute; right: 50px; bottom: 20px; z-index: 10; }
+
+.totop:hover { background-color: #f55881; }

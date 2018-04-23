@@ -1,0 +1,253 @@
+@media (max-width: 1200px) {
+    header nav {
+        text-align: center;
+    }
+}
+@media (min-width: 1040px) {
+    header nav > div {
+        margin: 0 auto;
+    }
+}
+@media (min-width: 2000px) {
+    html body {
+        font-size: 19px;
+    }
+    div.want-privacy .inner-modal {
+        max-width: 1700px;
+        max-height: 700px;
+    }
+}
+@media (min-width: 1450px) and (max-width: 1999px) {
+    html body {
+        font-size: 18px;
+    }
+    div.want-privacy .inner-modal {
+        max-width: 1200px;
+        max-height: 700px;
+    }
+}
+@media (min-width: 1280px) and (max-width: 1499px) {
+    html body {
+        font-size: 17px;
+    }
+    div.want-privacy .inner-modal {
+        max-width: 1000px;
+        max-height: 600px;
+    }
+}
+@media (min-width: 1100px) and (max-width: 1279px) {
+    html body {
+        font-size: 16px;
+    }
+}
+@media (max-width: 1100px) {
+    header nav {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+@media (max-width: 1099px) {
+    html body {
+        font-size: 15px;
+    }
+}
+@media (max-width: 992px) {
+    div.title-header {
+        display: inline-block;
+    }
+    div.title-header::after {
+        width: 85%;
+        margin-left: -42.5%;
+    }
+    section#features .col-lg-4 {
+        margin-top: 35px;
+    }
+    section#features {
+        padding: 30px 0 70px;
+    }
+    section.everything .row {
+        margin: 0 auto;
+    }
+    section.everything .row .thing {
+        margin-top: 40px;
+    }
+    body .inner-modal {
+        padding: 60px 80px 70px;
+    }
+    section.consultation:after {
+        width: 200px;
+        height: 288px;
+        top: -100px;
+    }
+    section.consultation:before {
+        width: 100px;
+        height: 196px;
+        bottom: -50px;
+    }
+    section.consultation input {
+        margin-top: 30px;
+    }
+    section.consultation {
+        padding: 30px 0 40px;
+    }
+    section.everything .thing {
+        margin-right: 0;
+    }
+    .kinds-kitchen .kind-k {
+        margin-bottom: 40px;
+    }
+    div.title-header {
+        margin-top: 50px;
+        padding-top: 85px;
+    }
+    div.title-header h1 {
+        line-height: 43px;
+    }
+    div.title-header h2 {
+        line-height: 55px;
+    }
+    div.title-header p {
+        font-size: 1.5em;
+        margin-top: 8px;
+        line-height: 25px;
+    }
+    body section.steps .col-lg-3:not(:first-child):before {
+        display: none;
+    }
+    body section.steps p:first-child {
+        font-size: 1.1em;
+    }
+    section.steps .col-lg-3 {
+        margin: 20px 0;
+    }
+    section.clients .col-lg-4 {
+        margin-bottom: 40px;
+    }
+    div.inner-contacts:before {
+        width: 180px;
+        height: 198px;
+        top: -40px;
+        left: -60px;
+    }
+    section.offer .image, section.pride .image {
+        width: 95%;
+    }
+    div.heading > p {
+        font-size: 0.8em;
+    }
+    div.heading > p.phone {
+        font-size: 1.064em;
+    }
+}
+@media (max-width: 768px) {
+    section#consultation:after, section#consultation:before {
+        display: none;
+    }
+    section.everything .last-row .thing:first-child:before {
+        display: none;
+    }
+    section.everything .last-row .thing:first-child {
+        margin-left: 0;
+    }
+    section.everything {
+        padding: 70px 0 100px;
+    }
+    .kinds-kitchen .kind-k {
+        margin: 0 auto 40px;
+    }
+    .size-kitchen li div img {
+        display: none;
+    }
+    div.wishes textarea {
+        width: 100%;
+        height: 140px;
+    }
+    div.wishes form > div {
+        width: 100%;
+    }
+    .wishes input[type="text"] {
+        margin-bottom: 20px;
+    }
+    div.inner-contacts:before {
+        display: none;
+    }
+    section.contacts {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    div.want-privacy .inner-modal {
+        max-width: 95%;
+    }
+    section.offer .image, section.pride .image {
+        width: 90%;
+    }
+}
+@media (max-width: 622px) {
+    div.title-header p {
+        font-size: 1.3em;
+        margin-top: 0;
+        line-height: 20px;
+    }
+    div.title-header:before {
+        width: 120px;
+        height: 38px;
+        margin-left: -60px;
+        top: -19px;
+    }
+    section.consultation:after, section.consultation:before {
+        display: none;
+    }
+    div.title-header h2 {
+        font-size: 3.24em;
+    }
+    section.offer .image, section.pride .image {
+        width: 85%;
+    }
+}
+@font-face {
+    font-family: 'Museo Sans Cyrl 300';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Museo Sans Cyrl 300'), url('../../app/fonts/MuseoSansCyrl_0.woff') format('woff');
+}
+@font-face {
+    font-family: 'Museo Sans Cyrl 500';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Museo Sans Cyrl 500'), url('../../app/fonts/MuseoSansCyrl_1.woff') format('woff');
+}
+@font-face {
+    font-family: 'Museo Sans Cyrl 700';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Museo Sans Cyrl 700'), url('../../app/fonts/MuseoSansCyrl_2.woff') format('woff');
+}
+@font-face {
+    font-family: 'Museo Sans Cyrl 900';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Museo Sans Cyrl 900'), url('../../app/fonts/MuseoSansCyrl_3.woff') format('woff');
+}
+@font-face {
+    font-family: 'PF Agora Slab Pro Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('PF Agora Slab Pro Regular'), url('../../app/fonts/pfagoraslabpro-reg.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'PF Agora Slab Pro Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('PF Agora Slab Pro Black'), url('../../app/fonts/pfagoraslabpro-black.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'fontello';
+  src: url('../../app/fonts/fontello.eot?58607901');
+  src: url('../../app/fonts/fontello.eot?58607901#iefix') format('embedded-opentype'),
+       url('../../app/fonts/fontello.woff2?58607901') format('woff2'),
+       url('../../app/fonts/fontello.woff?58607901') format('woff'),
+       url('../../app/fonts/fontello.ttf?58607901') format('truetype'),
+       url('../../app/fonts/fontello.svg?58607901#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,189 @@
+@media (min-width: 1500px) {
+    h1 {
+        font-size: 48px !important;
+    }
+    .finish-step p {
+        font-size: 30px;
+    }
+}
+@media (min-width: 1450px) {
+    .call-item .fa-font {
+        padding-right: 5px;
+    }
+}
+/* @media (min-width: 1200px) {
+     .crumbs-filter div div {
+         float: right;
+     }
+}*/
+@media (max-width: 1200px) {
+    .catalog p {
+        font-size: 19px;
+    }
+    .viewed .old-price {
+        padding-left: 0;
+    }
+    .old-price, .act-price {
+        font-size: 14px;
+    }
+    .row.footer p {
+        font-size: 19px;
+    }
+    .row.footer span, .row.footer input {
+        font-size: 15px;
+    }
+    .call-item > a .fa-font {
+        display: none;
+    }
+    .header ul li {
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+}
+@media (max-width: 1145px) {
+    .row.footer .nav-map li {
+        margin-top: 15px;
+    }
+}
+@media (min-width: 992px) {
+    .mob-menu {
+        display: none !important;
+    }
+    body .mobile-menu-full {
+        display: none;
+    }
+}
+@media (max-width: 991px) {
+    .viewed .old-price {
+        padding-left: 14px;
+    }
+    .nav-menu, .fast-crumbs, .header .container .row:before, .header .container .row:after {
+        display: none;
+    }
+    .header .container .row {
+        justify-content: space-between;
+    }
+    body .card-product .row .slider-items img {
+        display: block;
+    }
+    body .slider-items {
+        display: none;
+    }
+    body .card-product .row .slider-items-mob {
+        display: block;
+    }
+    body .card-product .container .row > .col-sm-12 {
+        margin-bottom: 20px;
+    }
+    body .card-product h1 {
+        font-size: 30px;
+    }
+    .card-product .row .price .act-price {
+        font-size: 21px;
+    }
+    .card-product .row .price .old-price {
+        font-size: 16px;
+    }
+    body .owl-carousel .owl-next, body .owl-carousel .owl-prev {
+        display: block;
+    }
+    .card-product .supplement .container > .row > div, .card-product .viewed-alt .container > .row > div {
+        margin-top: 20px;
+    }
+    .card-product .supplement .container > .row > div p, .card-product .viewed-alt .container > .row > div p {
+        font-size: 18px;
+    }
+    .card-product .supplement .container > .row > div span, .card-product .viewed-alt .container > .row > div span {
+        font-size: 15px;
+    }
+    .finish-step {
+        justify-content: center;
+    }
+    .finish-step p {
+        margin-top: 10px;
+    }
+    .cart-main-content {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .cart-main-content .col-md-3.col-sm-6.col-xs-12 {
+        padding-left: 0 !important;
+    }
+    .cart-main-content .col-md-3.col-sm-6.col-xs-12 .add-info {
+        margin: 0 auto 60px;
+    }
+    .finish-step, .issue {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media (max-width: 750px) {
+    .row.footer p {
+        font-size: 20px;
+    }
+    .row.footer span, .row.footer input {
+        font-size: 17px;
+    }
+    .row.footer span {
+        padding-top: 12px;
+    }
+    .row.footer .social .soc-icon {
+        font-size: 25px;
+    }
+    .row.crumbs-filter p {
+        font-size: 17px;
+    }
+    .catalog .numbering p {
+        font-size: 18px;
+    }
+    .viewed p.item-name {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .old-price, .act-price {
+        font-size: 16px !important;
+    }
+    .catalog p {
+        font-size: 22px;
+    }
+    .card-product .supplement > p, .card-product .viewed-alt > p {
+        padding-left: 15px;
+    }
+    .card-product .col-md-5 {
+        padding-right: 15px;
+    }
+    .cart-main-content .add-info {
+        width: 400px;
+    }
+    .issue {
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 600px) {
+    .row.footer .subscribe {
+        width: 95%;
+    }
+    .row.footer .subscribe input[type="text"] {
+        width: 50%;
+    }
+    .row.footer .subscribe input[type="submit"] {
+        float: right;
+    }
+    .row.footer span, .row.footer p {
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+    }
+    body .mobile-menu-full p.close-mob-menu {
+        right: 70px;
+    }
+}

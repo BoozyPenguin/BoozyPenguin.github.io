@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TheBest Page8</title>
+    <link rel="stylesheet" href="app/css/styles.css">
+    <link rel="stylesheet" href="src/assets/select2.min.css">
+</head>
+<body class="page">
+    <div class="notifications-window">
+        <div class="container">
+            <div class="top-nav">
+                <p class="page-title">Оповещения</p>
+                <div class="notifications close-window">Свернуть</div>
+            </div>
+            <div class="content">
+                <ul class="categories-list">
+                    <li class="active"><span><span class="category-name">Все</span></span></li>
+                    <li><span><span class="category-name">Доходы</span><span class="cat-count">8</span></span></li>
+                    <li><span><span class="category-name">Новости</span><span class="cat-count">4</span></span></li>
+                </ul>
+                <div class="articles-block">
+                    <p class="day-pub">Сегодня</p>
+                    <div class="article">
+                        <div class="meta-info">
+                            <p>Доходы</p>
+                            <p class="time-pub">22:15</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi vero, repellendus vo...</p>
+                    </div>
+                    <div class="article">
+                        <div class="meta-info">
+                            <p>Какая-то тема</p>
+                            <p class="time-pub">22:15</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    </div>
+                    <div class="article">
+                        <div class="meta-info">
+                            <p>Какая-то тема</p>
+                            <p class="time-pub">22:15</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    </div>
+                </div>
+                <div class="articles-block">
+                    <p class="day-pub">Вчера</p>
+                    <div class="article">
+                        <div class="meta-info">
+                            <p>Доходы</p>
+                            <p class="time-pub">22:15</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi vero, repellendus vo...</p>
+                    </div>
+                    <div class="article">
+                        <div class="meta-info">
+                            <p>Доходы</p>
+                            <p class="time-pub">22:15</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    </div>
+                    <div class="article">
+                        <div class="meta-info">
+                            <p>Доходы</p>
+                            <p class="time-pub">22:15</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    </div>
+                </div>
+                <div class="articles-block">
+                    <p class="day-pub">10.09.17</p>
+                    <div class="article">
+                        <div class="meta-info">
+                            <p>Новости</p>
+                            <p class="time-pub">22:15</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi vero, repellendus vo...</p>
+                    </div>
+                    <div class="article">
+                        <div class="meta-info">
+                            <p>Новости</p>
+                            <p class="time-pub">22:15</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    </div>
+                    <div class="article">
+                        <div class="meta-info">
+                            <p>Новости</p>
+                            <p class="time-pub">22:15</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+   <div class="user-nav" id="menu">
+        <div class="user-info">
+            <div class="user-pic"><img src="app/images/logo-user.png" alt="Изображение пользователя"></div>
+            <div class="name">
+                <p>Александр Шмаков</p>
+                <p class="user-id">ID 100</p>
+            </div>
+        </div>
+        <div class="nav-menu">
+            <ul>
+                <a href="#"><li class="home"><span class="icon"></span>Главная</li></a>
+                <a href="#"><li class="finance active-item"><span class="icon"></span>Мои доходы</li></a>
+                <a href="#"><li class="investments"><span class="icon"></span>Инвестиции</li></a>
+                <a href="#"><li class="team"><span class="icon"></span>Команда</li></a>
+                <a href="#"><li class="transfer"><span class="icon"></span>Перевод средств</li></a>
+                <a href="#"><li class="operations"><span class="icon"></span>Мои операции</li></a>
+                <a href="#"><li class="support"><span class="icon"></span>Техподдержка</li></a>
+                <a href="#"><li class="settings"><span class="icon"></span>Настройки</li></a>
+            </ul>
+        </div>
+    </div>
+    <div class="container" id="main">
+        <div class="top-nav">
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <p class="page-title">Настройки</p>
+            <div class="notifications"><span class="not-count">12</span></div>
+        </div>
+        <div class="content content-padd">
+            <form class="profile-edit" action="settings.php">
+                <div class="inner-form">
+                    <p>Профиль</p>
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" name="name" value="Иван">
+                    <label for="surname">Фамилия</label>
+                    <input type="text" id="surname" name="surname" value="Иван">
+                    <label for="patronymic">Отчество</label>
+                    <input type="text" id="patronymic" name="patronymic" value="Иван">
+                    <p class="field-title">Пол</p>
+                    <input type="radio" class="radio" name="gender" id="male" checked>
+                    <label for="male">М</label>
+                    <input type="radio" class="radio" name="gender" id="female">
+                    <label for="female">Ж</label>
+                    <label for="date">Дата рождения</label>
+                    <input type="text" id="date" name="date" value="2017-01-01">
+                    <label for="type">Тип профиля</label>
+                    <select id="type" name="type">
+                        <option value="Кто-то">Кто-то</option>
+                        <option value="Еще кто-то">Еще кто-то</option>
+                        <option value="И еще кто-то">И еще кто-то</option>
+                        <option value="Lorem1">Lorem1</option>
+                        <option value="Lorem2">Lorem2</option>
+                        <option value="Lorem3">Lorem3</option>
+                        <option value="Lorem4">Lorem4</option>
+                        <option value="Lorem5">Lorem5</option>
+                        <option value="Lorem6">Lorem6</option>
+                        <option value="Lorem7">Lorem7</option>
+                        <option value="Lorem8">Lorem8</option>
+                        <option value="Lorem9">Lorem9</option>
+                        <option value="Lorem10">Lorem10</option>
+                        <option value="Lorem11">Lorem11</option>
+                        <option value="Lorem12">Lorem12</option>
+                        <option value="Lorem13">Lorem13</option>
+                        <option value="Lorem14">Lorem14</option>
+                        <option value="Lorem15">Lorem15</option>
+                    </select>
+                    <label for="country">Страна</label>
+                    <input type="text" id="country" name="country" value="Иван">
+                    <label for="upload-file">Файл</label>
+                    <label class="file-label">
+                        <input type="file" name="upload-file" id="upload-file" class="file-field">
+                        <span>Обзор...</span>
+                    </label>
+                    <span class="file-name">Файл не загружен...</span>
+                </div>
+                <input type="submit" class="button" value="Сохранить изменения">
+            </form>
+        </div>    
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="src/assets/slideout.min.js"></script>
+    <script src="src/assets/select2.min.js"></script>
+    <script src="src/assets/date-time-picker.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="src/assets/es5-shim.min.js"></script>
+    <![endif]-->
+    <script src="app/js/script.js"></script>
+    <script>
+    $('select').select2({
+        minimumResultsForSearch: Infinity
+    });
+    $('#date').dateTimePicker({
+        monthName: ['ЯНВ', 'ФЕВ', 'МАР', 'АПР', 'МАЙ', 'ИЮНЬ', 'ИЮЛЬ', 'АВГ', 'СЕН', 'ОКТ', 'НОЯ', 'ДЕК'],
+        yearName: '',
+        dayName: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб']
+    });
+    </script>
+</body>
+</html>

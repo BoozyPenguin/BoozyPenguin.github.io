@@ -1,0 +1,138 @@
+@media (max-width: 1023px){
+    .first_section .item .info,
+    .steps .item,
+    .steps .link,
+    .products .block,
+    .videos .video,
+    .videos .info,
+    .schema .line,
+    .reviews .col,
+    .gallery .item{
+        visibility: visible !important;
+    }
+
+
+    .menu a{
+        font-size: 14px;
+    }
+
+
+    header .adres{
+        display: none;
+    }
+
+    header .callback_link{
+        margin-left: 40px;
+    }
+
+
+    .steps{
+        padding: 40px 0;
+    }
+    .steps .item + .item:before,
+    .steps .item + .item:after,
+    .steps .link:after{
+        display: none;
+    }
+
+
+    .order_block .cont{
+        padding: 0;
+    }
+    .order_block .info{
+        display: table;
+        float: none;
+
+        width: 100%;
+
+        padding: 0 10px;
+
+        text-align: center;
+    }
+    .order_block .info:after{
+        display: none;
+    }
+
+    .order_block .info .box{
+        width: 100%;
+    }
+
+    .order_block form{
+        margin: 0;
+        padding: 30px;
+    }
+
+
+    .videos .video{
+        width: 50%;
+    }
+    .videos .info{
+        width: 50%;
+    }
+
+
+    .schema .item + .item:before,
+    .schema .line + .line .item + .item:before,
+    .schema .line + .line .item:before{
+        display: none;
+    }
+
+    .schema .line{
+        padding: 0 !important;
+    }
+    .schema .line + .line{
+        padding-left: 30px !important;
+    }
+
+
+    .reviews .col{
+        flex-basis: 48%;
+    }
+    .reviews .col:nth-child(3){
+        display: none;
+    }
+
+
+    .gallery .item{
+        width: 25%;
+    }
+
+
+    footer .info .title{
+        margin-bottom: 20px;
+    }
+
+    footer .info{
+        padding: 20px;
+    }
+    footer .info .box{
+        width: auto;
+    }
+
+    footer .info .links a{
+        display: block;
+
+        width: 100%;
+    }
+    footer .info .links a + a{
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    footer .info .phones div + div{
+        margin-left: 16px;
+    }
+
+    footer .info .copyright,
+    footer .info .links,
+    footer .info .socials{
+        margin-top: 20px;
+    }
+
+
+    .buttonUp{
+        display: none !important;
+
+        opacity: 0 !important;
+    }
+}

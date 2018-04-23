@@ -1,0 +1,203 @@
+/* ===IMPORT STYLESHEETS=== */
+@import '../../src/sass/partials/fonts.css'
+@import '../../src/sass/partials/grid.css'
+@import '../../src/sass/partials/variables.sass'
+body
+    font-family: 'Roboto'
+    font-size: 18px
+    color: #000
+    background-image: url('../img/bg.png')
+    background-color: #f4f4f4
+    background-repeat: no-repeat
+    background-size: auto 100%
+    background-attachment: fixed
+    font-weight: 300
+    padding-left: 20%
+a
+    color: inherit
+    text-decoration: none
+ul
+    margin: 0
+    padding: 0 10px
+li
+    list-style-type: none
+p
+    margin: 0
+    padding: 0
+header.header
+    padding: 1em 0
+    text-align: center
+    font-size: 1.1em
+p.heading
+    font-weight: 500
+.sm
+    display: inline-block
+    width: 30px
+    height: 30px
+    margin: 0 7px
+    vertical-align: middle
+    background: url(../img/smiles.png) no-repeat
+.sm.sly
+    background-position: -213px 0
+.sm.wink
+    background-position: -91px 0
+.sm.nice
+    background-position: -122px 0
+.sm.traces
+    background-position: -273px 0
+nav.categories
+    li
+        display: inline-block
+        background: #505050
+        color: #fff
+        padding: 3px 10px
+        margin: 5px
+        cursor: pointer
+        font-size: .95em
+        border: 1px solid #505050
+        &:hover
+            border-color: #fff
+            background: #646464
+        &.active
+            background: #fff
+            color: #000
+            border-color: #505050
+section.cases
+    padding: 10px 60px
+    div.case
+        background-color: #000
+        height: 16.66em
+        border: 1px solid #505050
+        margin: 15px 20px
+        overflow: hidden
+        padding: 0
+        position: relative
+        i.fas
+            display: block
+            color: #fff
+            opacity: 0
+            z-index: 2
+            text-align: center
+            cursor: pointer
+            transition: .3s ease-in-out
+            &:hover
+                opacity: .8
+        > .fas
+            position: absolute
+            top: 50%
+            left: 50%
+            margin-top: -.75em
+            margin-left: -.5em
+            width: 1em
+            height: 1em
+            font-size: 4em
+        &:hover
+            .cover
+                background-color: rgba(0,0,0,.8)
+            .heading
+                bottom: 0
+            .fas
+                opacity: .7
+        .cover
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            background-color: rgba(0,0,0,.3)
+            transition: .2s ease-in-out
+            z-index: 0
+        img
+            width: 100%
+        .heading
+            display: flex
+            justify-content: space-between
+            align-items: center
+            position: absolute
+            height: 3em
+            padding: 6px 10px
+            width: 100%
+            bottom: -3em
+            background: rgba(0,0,0,0)
+            border-top: 1px solid #fff
+            color: #fff
+            transition: .1s linear
+            z-index: 2
+            .paragraph a
+                display: block
+            .title
+                font-weight: 500
+            .desc
+                font-size: .8em
+            .tags
+                .tag
+                    display: inline-block
+                    font-size: .7em
+                    text-align: center
+                    margin-left: 12px
+                    border-radius: .4em
+                    padding: 5px 0
+                    &.corrections
+                        background-color: #31a139
+        .next-arrow
+            font-size: 1.2em
+        img[data-slide], .paragraph a[data-slide]
+            display: none
+        img.current-slide, .paragraph a.current-slide
+            display: block
+footer
+    margin: 30px 0
+    .contact
+        margin: 8px 0
+        a
+            font-weight: 400
+            &:hover
+                border-bottom: 1px dotted #000
+/* MEDIA QUERIES */
+@media (max-height: 770px) and (min-width: 991px)
+    body
+        padding-left: 19%
+@media (max-height: 660px) and (min-width: 991px)
+    body
+        padding-left: 17%
+@media (max-height: 550px) and (min-width: 991px)
+    body
+        padding-left: 15%
+@media (max-height: 480px) and (min-width: 991px)
+    body
+        padding-left: 13%
+@media (max-height: 380px) and (min-width: 991px)
+    body
+        padding-left: 10%
+@media (max-height: 270px) and (min-width: 991px)
+    body
+        padding-left: 7%
+@media (min-width: 550px) and (max-width: 767px)
+    section.cases div.case
+        height: 25rem
+@media (max-width: 990px)
+    body
+        background: #f4f4f4
+        padding: 0 20px
+        font-size: 22px
+    nav.categories ul
+        text-align: center
+@media (max-width: 1100px)
+    body
+        padding-left: 22%
+@media (min-width: 1400px)
+    body
+        padding-left: 17%
+        font-size: 20px
+@media (min-width: 1600px)
+    body
+        padding-left: 17%
+        font-size: 22px
+@media (min-width: 1800px)
+    body
+        padding-left: 14%
+        font-size: 25px
+@media (min-width: 2200px)
+    body
+        padding-left: 12%
+        font-size: 28px
+        

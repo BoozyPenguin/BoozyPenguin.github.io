@@ -1,0 +1,145 @@
+@media (max-width: 479px){
+    header .logo{
+        margin-right: -30px;
+        margin-left: -10px;
+    }
+
+    header .callback_link{
+        margin-left: 0;
+        padding: 0 10px;
+
+        font-size: 12px;
+    }
+
+    header .phones .box div{
+        display: block;
+    }
+    header .phones .box div + div{
+        margin-left: 0;
+    }
+
+
+    .first_section .item{
+        padding-top: 90px;
+    }
+    .first_section .item .box{
+        padding: 15px 10px;
+    }
+    .first_section .item .title{
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+
+    .discount_form .discount_desc{
+        font-size: 21px;
+    }
+    .discount_form .title{
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .discount_form .title b{
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+
+    .products{
+        padding: 40px 0 20px;
+    }
+
+    .products .tabs li{
+        width: 100%;
+
+        border-right: 1px solid #ececec;
+    }
+    .products .tabs li.active + li{
+        border-left-color: #ececec;
+    }
+
+    .products .product .features .name{
+        width: 120px;
+    }
+
+
+    .order_block .info .box{
+        padding: 20px 0;
+    }
+
+    .order_block .info .title,
+    .text_block h1{
+        line-height: 26px;
+    }
+    .order_block .info .title span{
+        margin: 15px 0 10px;
+
+        line-height: 25px;
+    }
+
+    .order_block .info .phones .number + .number{
+        margin-left: 0;
+    }
+
+
+    .order_block form .col.left{
+        margin-bottom: 15px;
+        padding: 0;
+    }
+    .order_block form .col.right{
+        width: 100%;
+    }
+
+
+    .videos .video iframe{
+        height: 250px;
+    }
+
+    .videos .info{
+        padding: 20px !important;
+    }
+
+
+    .schema .item{
+        width: 100%;
+
+        padding-right: 0;
+    }
+
+
+    .reviews .col{
+        flex-basis: 100%;
+    }
+    .reviews .col:first-child{
+        order: 0;
+    }
+
+
+    .gallery .item{
+        width: 50%;
+    }
+
+
+    footer .info .phones div + div{
+        margin-top: 10px;
+        margin-left: 0;
+    }
+.steps .desc {
+    padding: 10px 0;
+}
+
+    #popup{
+        width: 300px;
+
+        padding: 30px 20px;
+    }
+
+    .one_article {
+        width: 100%
+    }
+
+    #content_inner iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+}

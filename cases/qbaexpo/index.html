@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ObaExpo</title>
+    <link rel="stylesheet" href="app/css/styles.css">
+</head>
+<body>
+    <div class="call-form modal">
+        <div class="inner">
+            <i class="fa fa-times close-call-form" aria-hidden="true"></i>
+            <p>Оставьте Ваши контакты и мы Вам перезвоним в ближайшее время</p>
+            <form action="subm.php">
+                <input type="text" name="name" placeholder="Имя">
+                <input type="text" name="phone" required placeholder="8 (___) ___ - __ - __">
+                <input type="submit" value="Перезвоните мне">
+            </form>
+        </div>
+    </div>
+    <div class="brief-form modal">
+        <div class="inner">
+            <i class="fa fa-times close-brief-form" aria-hidden="true"></i>
+            <p>Получите и заполните бриф и мы разработаем стенд, максимально отвечающий Вашим требованиям</p>
+            <form action="subm.php">
+                <input type="text" class="name" placeholder="Имя">
+                <input type="text" class="phone" placeholder="8 (___) ___ - __ - __" required>
+                <input type="text" class="email" placeholder="E-mail *" required>
+                <input type="submit" value="Получить бриф!">
+            </form>
+        </div>
+    </div>
+    <div class="cost-form modal">
+        <div class="inner">
+            <i class="fa fa-times close-cost-form" aria-hidden="true"></i>
+            <p>Заявка на расчет стоимости стенда<span>Мы свяжемся с Вами и уточним детали</span></p>
+            <form action="subm.php">
+                <label>
+                    <p><span></span>прикрепить макет</p>
+                    <input type="file" class="layout" required>
+                </label>
+                <input type="text" class="phone" placeholder="8 (___) ___ - __ - __" required>
+                <textarea class="more" placeholder="Площадь, пожелания по материалам, другое"></textarea>
+                <div>
+                    <input type="submit" value="Отправить!">
+                    <a href="#"><span>Политика конфиденциальности</span></a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <nav class="row justify-content-between">
+                <div class="logo"></div>
+                <ul class="menu">
+                    <li class="active-item"><a href="#">Портфолио</a></li>
+                    <li><a href="#">О производстве</a></li>
+                    <li><a href="#">Технологии</a></li>
+                </ul>
+                <div class="call-me">
+                    <p>г. Москва,  Нагорный проезд, д. 7</p>
+                    <p>qbaexpo@qba.ru</p>
+                    <p>+7 (495) 668-36-55</p>
+                    <div class="btn call">Заказать звонок</div>
+                </div>
+            </nav>
+            <div class="stands row align-items-center">
+                <img src="app/images/stands.png" alt="Выставочные стенды под ключ" width="500">
+                <ul>
+                    <li>Бесплатная разработка трех дизайн-макетов</li>
+                    <li>Комплексное сопровождение от проектирования до демонтажа</li>
+                    <li>Собственное производство и профессиональная команда</li>
+                </ul>
+            </div>
+            <div class="get-layouts">
+                <h3>Получите 3 макета эксклюзивного стенда в разных ценовых категориях бесплатно!</h3>
+                <form action="subm.php" class="row justify-content-center">
+                    <input type="text" class="name col-md-3" placeholder="Имя" required>
+                    <input type="text" class="phone col-md-3" placeholder="Телефон" required>
+                    <input type="submit" class="col-md-5 col-lg-4" value="Получить 3 варианта макета">
+                </form>
+            </div>
+        </div>
+    </header>
+    <section class="offer">
+        <div class="container">
+            <h2>Что мы предлагаем?</h2>
+            <p>Обратившись к нам, вы получите эксклюзивную застройку для необорудованной выставочной площадки, разработанную под ваш бюджет  - стоимость квадратного метра стенда колеблется в пределах от 5 до 75 тыс. рублей!</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="preview-offer">
+                        <img src="app/images/offer1.png" alt="Что мы предлагаем">
+                    </div>
+                    <p>Мы разрабатываем <span class="bold">3 макета</span> стенда по заполненному вами брифу</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="preview-offer">
+                        <img src="app/images/offer2.png" alt="Что мы предлагаем">
+                    </div>
+                    <p>Вы выбираете <span class="bold">оптимальный</span> по бюджету и дизайну <span class="bold">вариант</span></p>
+                </div>
+                <div class="col-md-4">
+                    <div class="preview-offer">
+                        <img src="app/images/offer3.png" alt="Что мы предлагаем">
+                    </div>
+                    <p>Мы <span>изготавливаем стенд</span>, в точности соответствующий макету</p>
+                </div>
+            </div>
+            <p>Пришлите нам заполненный бриф и получите макет выставочного стенда в трёх вариантах!</p>
+            <div class="btn-red get-brief">Получить бриф на разработку макетов</div>
+        </div>
+    </section>
+    <section class="projects">
+        <div class="container">
+            <h2>Выполненные проекты</h2>
+            <p>12 лет опыта позволяют нам предоставлять застройки и сервис наивысшего качество, и лучшее тому подтверждение - отзывы благодарных клиентов.</p>
+            <div class="slider-projects owl-carousel row">
+                <div class="slide row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="row">
+                            <div class="logo"><img src="app/images/knightfrank.png" alt="KnightFrank"></div>
+                            <div class="short-desc">
+                                <span>Площадь: 44 м2</span>
+                                <span>Материалы: баннер, пленка, пластик, ДСП, ткань, ферма</span>
+                            </div>
+                        </div>  
+                        <div class="row finish-img">
+                            <img src="app/images/prev1.png" alt="">
+                        </div>  
+                        <div class="row preview-images">
+                            <div class="col-lg-4 col-md-4 col-sm-4 active-img"><a href="app/images/prev1.png" data-fancybox data-caption="Knight Frank 1"><img src="app/images/prev1.png" alt=""></a></div>
+                            <div class="col-lg-4 col-md-4 col-sm-4"><a href="app/images/prev2.png" data-fancybox data-caption="Knight Frank 2"><img src="app/images/prev2.png" alt=""></a></div>
+                            <div class="col-lg-4 col-md-4 col-sm-4"><a href="app/images/prev3.png" data-fancybox data-caption="Knight Frank 3"><img src="app/images/prev3.png" alt=""></a></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 review">
+                        <p class="im-heading">"...очень интересный стенд при небольшом бюджете..."</p>
+                        <p>
+                        Имея ограниченный бюджет и небольшую площадь, мы опасались 
+                        не найти подходящего решения, но команда QBA предложила оригинальный выход, создать перспективу в даль.<br/><br/>
+                        Этот прием создал ощущение визуального увеличения площади. 
+                        Все работы были проведени качественно и в поставленные нами
+                        сроки. Стильная отделка, подвесы, оригинальная флористика, экраны. Компетентные менеджеры сопровождали и консультировали с самого начала до самого конца.<br/><br/>
+                        На протяжении всей выставки к нам подходили коллеги из других 
+                        фирм с неподдельным интересом к застройщику. Выражаем свою благодарность компании QBA за проект и желаем всем таких партнеров!
+                        </p>
+                        <span>С. Портнова, отдел маркетинга KNIGHT FRANK <br/>www.facebook.com/people/Светлана-Портнова</span>
+                    </div>
+                </div>
+                <div class="slide row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="row">
+                            <div class="logo"><img src="app/images/knightfrank.png" alt="KnightFrank"></div>
+                            <div class="short-desc">
+                                <span>Площадь: 44 м2</span>
+                                <span>Материалы: баннер, пленка, пластик, ДСП, ткань, ферма</span>
+                            </div>
+                        </div>  
+                        <div class="row finish-img">
+                            <img src="app/images/prev1.png" alt="">
+                        </div>  
+                        <div class="row preview-images">
+                            <div class="col-lg-4 col-md-4 col-sm-4 active-img"><a href="app/images/prev1.png" data-fancybox data-caption="Knight Frank 1"><img src="app/images/prev1.png" alt=""></a></div>
+                            <div class="col-lg-4 col-md-4 col-sm-4"><a href="app/images/prev2.png" data-fancybox data-caption="Knight Frank 2"><img src="app/images/prev2.png" alt=""></a></div>
+                            <div class="col-lg-4 col-md-4 col-sm-4"><a href="app/images/prev3.png" data-fancybox data-caption="Knight Frank 3"><img src="app/images/prev3.png" alt=""></a></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 review">
+                        <p class="im-heading">"...очень интересный стенд при небольшом бюджете..."</p>
+                        <p>
+                        Имея ограниченный бюджет и небольшую площадь, мы опасались 
+                        не найти подходящего решения, но команда QBA предложила оригинальный выход, создать перспективу в даль.<br/><br/>
+                        Этот прием создал ощущение визуального увеличения площади. 
+                        Все работы были проведени качественно и в поставленные нами
+                        сроки. Стильная отделка, подвесы, оригинальная флористика, экраны. Компетентные менеджеры сопровождали и консультировали с самого начала до самого конца.<br/><br/>
+                        На протяжении всей выставки к нам подходили коллеги из других 
+                        фирм с неподдельным интересом к застройщику. Выражаем свою благодарность компании QBA за проект и желаем всем таких партнеров!
+                        </p>
+                        <span>С. Портнова, отдел маркетинга KNIGHT FRANK <br/>www.facebook.com/people/Светлана-Портнова</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="virtual">
+        <div class="container">
+            <h2>Пройдитесь по вашему стенду в виртуальной реальности</h2>
+            <p>В разных ценовых вариантах и не берет за это деньги.</p>
+            <p>Оцените качество работы во время презентации макетов с помощью VR очков или в режиме дополненной реальности, определитесь с выбором оформления будущего стенда, и только после этого делайте индивидуальный заказ!</p>
+            <div class="features row">
+                <div class="col-lg-5 col-sm-4">
+                    <div class="row feature">
+                        <div class="col-lg-3"><img src="app/images/vr.png" alt="VR-очки"></div>
+                        <div class="col-lg-9">
+                            <p>VR-очки</p>
+                            <span>Во время просмотра видео в режиме 3D вы увидите макет с разных ракурсов</span>
+                        </div>    
+                    </div>
+                </div>
+                <div class="col-lg-5 col-sm-4">
+                    <div class="row feature">
+                        <div class="col-lg-3"><img src="app/images/dop.png" alt="Дополненная реальность"></div>
+                        <div class="col-lg-9">
+                            <p>Дополненная реальность</p>
+                            <span>Скачав приложение для смартфона, вы увидите макет через камеру</span>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="examples">
+        <div class="container">
+            <h2>Примеры макетов</h2>
+            <div class="slider-examples owl-carousel">
+                <div class="slide row">
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="app/images/project1.png" data-fancybox data-caption="Example 1"><img src="app/images/project1.png" alt=""></a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="app/images/project2.png" data-fancybox data-caption="Example 2"><img src="app/images/project2.png" alt=""></a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="app/images/project3.png" data-fancybox data-caption="Example 3"><img src="app/images/project3.png" alt=""></a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="app/images/project4.png" data-fancybox data-caption="Example 4"><img src="app/images/project4.png" alt=""></a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="app/images/project5.png" data-fancybox data-caption="Example 5"><img src="app/images/project5.png" alt=""></a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="app/images/project6.png" data-fancybox data-caption="Example 6"><img src="app/images/project6.png" alt=""></a>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-1 col-sm-2 col-3"><a href="app/images/project1.png" data-fancybox data-caption="Mini preview 1"><img src="app/images/project1.png" alt=""></a></div>
+                        <div class="col-lg-1 col-sm-2 col-3"><a href="app/images/project1.png" data-fancybox data-caption="Mini preview 2"><img src="app/images/project1.png" alt=""></a></div>
+                        <div class="col-lg-1 col-sm-2 col-3"><a href="app/images/project1.png" data-fancybox data-caption="Mini preview 3"><img src="app/images/project1.png" alt=""></a></div>
+                        <div class="col-lg-1 col-sm-2 col-3"><a href="app/images/project1.png" data-fancybox data-caption="Mini preview 4"><img src="app/images/project1.png" alt=""></a></div>
+                        <div class="col-lg-1 col-sm-2 col-3"><a href="app/images/project1.png" data-fancybox data-caption="Mini preview 5"><img src="app/images/project1.png" alt=""></a></div>
+                        <div class="col-lg-1 col-sm-2 col-3"><a href="app/images/project1.png" data-fancybox data-caption="Mini preview 6"><img src="app/images/project1.png" alt=""></a></div>
+                        <div class="col-lg-1 col-sm-2 col-3"><a href="app/images/project1.png" data-fancybox data-caption="Mini preview 7"><img src="app/images/project1.png" alt=""></a></div>
+                        <div class="col-lg-1 col-sm-2 col-3"><a href="app/images/project1.png" data-fancybox data-caption="Mini preview 8"><img src="app/images/project1.png" alt=""></a></div>
+                        <div class="col-lg-1 col-sm-2 col-3"><a href="app/images/project1.png" data-fancybox data-caption="Mini preview 9"><img src="app/images/project1.png" alt=""></a></div>
+                        <div class="col-lg-1 col-sm-2 col-3"><a href="app/images/project1.png" data-fancybox data-caption="Mini preview 10"><img src="app/images/project1.png" alt=""></a></div>
+                        <div class="col-lg-1 col-sm-2 col-3"><a href="app/images/project1.png" data-fancybox data-caption="Mini preview 11"><img src="app/images/project1.png" alt=""></a></div>
+                        <div class="col-lg-1 col-sm-2 col-3"><a href="app/images/project1.png" data-fancybox data-caption="Mini preview 12"><img src="app/images/project1.png" alt=""></a></div>
+                    </div>
+                </div>
+                <div class="slide row">
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="app/images/project1.png" data-fancybox data-caption="Example 1"><img src="app/images/project1.png" alt=""></a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="app/images/project2.png" data-fancybox data-caption="Example 2"><img src="app/images/project2.png" alt=""></a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="app/images/project3.png" data-fancybox data-caption="Example 3"><img src="app/images/project3.png" alt=""></a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="app/images/project4.png" data-fancybox data-caption="Example 4"><img src="app/images/project4.png" alt=""></a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="app/images/project5.png" data-fancybox data-caption="Example 5"><img src="app/images/project5.png" alt=""></a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="app/images/project6.png" data-fancybox data-caption="Example 6"><img src="app/images/project6.png" alt=""></a>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-1 col-sm-2 col-3"><a href="app/images/project1.png" data-fancybox data-caption="Mini preview 1"><img src="app/images/project1.png" alt=""></a></div>
+                        <div class="col-lg-1 col-sm-2 col-3"><a href="app/images/project1.png" data-fancybox data-caption="Mini preview 2"><img src="app/images/project1.png" alt=""></a></div>
+                        <div class="col-lg-1 col-sm-2 col-3"><a href="app/images/project1.png" data-fancybox data-caption="Mini preview 3"><img src="app/images/project1.png" alt=""></a></div>
+                        <div class="col-lg-1 col-sm-2 col-3"><a href="app/images/project1.png" data-fancybox data-caption="Mini preview 4"><img src="app/images/project1.png" alt=""></a></div>
+                        <div class="col-lg-1 col-sm-2 col-3"><a href="app/images/project1.png" data-fancybox data-caption="Mini preview 5"><img src="app/images/project1.png" alt=""></a></div>
+                        <div class="col-lg-1 col-sm-2 col-3"><a href="app/images/project1.png" data-fancybox data-caption="Mini preview 6"><img src="app/images/project1.png" alt=""></a></div>
+                        <div class="col-lg-1 col-sm-2 col-3"><a href="app/images/project1.png" data-fancybox data-caption="Mini preview 7"><img src="app/images/project1.png" alt=""></a></div>
+                        <div class="col-lg-1 col-sm-2 col-3"><a href="app/images/project1.png" data-fancybox data-caption="Mini preview 8"><img src="app/images/project1.png" alt=""></a></div>
+                        <div class="col-lg-1 col-sm-2 col-3"><a href="app/images/project1.png" data-fancybox data-caption="Mini preview 9"><img src="app/images/project1.png" alt=""></a></div>
+                        <div class="col-lg-1 col-sm-2 col-3"><a href="app/images/project1.png" data-fancybox data-caption="Mini preview 10"><img src="app/images/project1.png" alt=""></a></div>
+                        <div class="col-lg-1 col-sm-2 col-3"><a href="app/images/project1.png" data-fancybox data-caption="Mini preview 11"><img src="app/images/project1.png" alt=""></a></div>
+                        <div class="col-lg-1 col-sm-2 col-3"><a href="app/images/project1.png" data-fancybox data-caption="Mini preview 12"><img src="app/images/project1.png" alt=""></a></div>
+                    </div>
+                </div>
+            </div>
+            <p>Выберите один из готовых проектов и мы бесплатно изменим его под Ваш бренд, площадь и внесем необходимые доработки</p>
+            <div class="btn-red find-cost">Узнать стоимость по макету</div>
+        </div>
+    </section>
+    <section class="why">
+        <div class="container">
+            <h2>Почему стоит обратиться именно к нам?</h2>
+            <p>Во время выполнения проекта мы уделяем внимание каждой детали, сопровождая клиента на каждом этапе сотрудничества. Мы отвечаем за репутацию вашей компании на выставке -  готовы ответить на все ваши вопросы и приехать на место проведения мероприятия в любой непредвиденной ситуации.</p>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <img src="app/images/why1.png" alt="Сопровождение">
+                    <p>Сопровождение <span class="bold">персонального менеджера</span> и присутствие на выставке дежурного монтажника - гарантия надежности застройки</p>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <img src="app/images/why2.png" alt="Решения">
+                    <p>Для воплощения в жизнь нестандартных решений наших дизайнеров инженеры используют <span class="bold">передовые решения</span> выставочной индустрии</p>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <img src="app/images/why3.png" alt="Индивидуальный расчет">
+                    <p>Индивидуальный расчет и подбор выгодного решения: мы изготавливаем стенды <span class="bold">в разном ценовом диапазоне</span> - от 4 900 до 75 000 р./м2</p>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <img src="app/images/why4.png" alt="Презентация">
+                    <p>Презентация макета с использованием очков <span class="bold">виртуальной реальности</span> позволит увидеть будущий стенд и оценить мельчайшие детали</p>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <img src="app/images/why5.png" alt="Аккредитация">
+                    <p>Мы аккредитованы на всех выставочных комплексах Москвы и на основных площадках России, а наличие партнеров <span class="bold">по всему миру</span> позволяет осуществлять застройку в других странах</p>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <img src="app/images/why6.png" alt="Аренда оборудования">
+                    <p>Аренда оборудования, флористика, промоушен, изготовление <span class="bold">брендированных</span> сувениров и полиграфии</p>
+                </div>
+            </div>
+            <p>У вас есть свой макет? Пришлите его нам, и в течение 2-х часов мы составим смету по вашему проекту.</p>
+            <div class="btn-red find-cost">Узнать стоимость по макету</div>
+        </div>
+    </section>
+    <section class="kinds">
+        <div class="container">
+            <h2>Виды стендов</h2>
+            <div class="row">
+                <div class="col-lg-4 col-sm-5">
+                    <a href="#">
+                        <img src="app/images/stand1.png" alt="Эксклюзивные стенды">
+                        <div>
+                            <h3>Эксклюзивные</h3>
+                            <p>Абсолютное отсутствие стандартных элементов, возможность расширить функционал за счет внедрения интерактивных технологий и дополнительного декора</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-5">
+                    <a href="#">
+                        <img src="app/images/stand2.png" alt="Комбинированные стенды">
+                        <div>
+                            <h3>Комбинированные</h3>
+                            <p>Комбинация конструктора (Octonorm, Maxima, Consta, Sodem, Joker) и эксклюзивных элементов, установка световых коробов, декора и подвесов</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-5">
+                    <a href="#">
+                        <img src="app/images/stand3.png" alt="Оформление стандартной конструкции">
+                        <div>
+                            <h3>Оформление стандартной конструкции</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="additional">
+        <div class="container">
+            <h2>Дополнительные услуги</h2>
+            <div class="row">
+                <div class="col-lg-4 col-sm-5">
+                    <a href="#">
+                        <img src="app/images/add1.png" alt="Полиграфия и сувениры">
+                        <div>
+                            <h3>Полиграфия и сувениры</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-5">
+                    <a href="#">
+                        <img src="app/images/add2.png" alt="Рекламные конструкции/наружная реклама">
+                        <div>
+                            <h3>Рекламные конструкции/наружная реклама</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-5">
+                    <a href="#">
+                        <img src="app/images/add3.png" alt="Мобильные стенды">
+                        <div>
+                            <h3>Мобильные стенды</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-5">
+                    <span>Ресепшены</span>
+                    <span>Торговые островки</span>
+                </div>
+                <div class="col-lg-4 col-sm-5">
+                    <span>Торговое оборудование</span>
+                    <span>Аренда мебели</span>
+                </div>
+                <div class="col-lg-4 col-sm-5">
+                    <span>Покупка площади</span>
+                    <span>Сопровождение на выставке</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="production">
+        <div class="container">
+            <h2>О производстве</h2>
+            <p>В штате работают дизайнеры, художники, инженеры, электрики и сметчики. Командная работа обеспечивает сочетание безупречного оформления, технической функциональности и маркетинговой эффективности.</p>
+            <div class="row video-info">
+                <div class="col-lg-6">
+                    <div data-type="youtube" data-video-id="F9_MDwNOlso" class="video"></div>
+                </div>
+                <div class="col-lg-6">
+                    <p>
+                        Специалисты QBA MEDIA выполняют каждый проект по техническому заданию клиента или заполненному брифу. В работе 5 постоянных производств используется комплекс современного оборудования, в том числе:<br/><br/>
+                        - форматно-распилочный станок<br/>
+                        - станок ЧПУ<br/>
+                        - монтажно-дисковая пила PRECISIO<br/>
+                        - торцовочная пила<br/>
+                        - фрезер и лобзики FESTOOL для выездного монтажа<br/>
+                        - широкоформатный печатный станок INFINITY<br/>
+                        - плоттерный станок для резки пленки.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="advantages">
+        <div class="container">
+            <p>Сотрудничая с нами, вы получаете возможность проявить индивидуальность своей компании за счет уникального стенда, выполненного из отличающихся по стилю и стоимости материалов.</p>
+            <div class="row">
+                <div class="col">
+                    <img src="app/images/adv1.png" alt="">
+                    <p>Оргстекло</p>
+                </div>
+                <div class="col">
+                    <img src="app/images/adv2.png" alt="">
+                    <p>Пластик</p>
+                </div>
+                <div class="col">
+                    <img src="app/images/adv3.png" alt="">
+                    <p>ДСП,МДФ,ПВХ</p>
+                </div>
+                <div class="col">
+                    <img src="app/images/adv4.png" alt="">
+                    <p>Баннерная ткань</p>
+                </div>
+                <div class="col">
+                    <img src="app/images/adv5.png" alt="">
+                    <p>Дерево</p>
+                </div>
+                <div class="col">
+                    <img src="app/images/adv6.png" alt="">
+                    <p>Конструктор</p>
+                </div>
+                <div class="col">
+                    <img src="app/images/adv7.png" alt="">
+                    <p>Ковролин</p>
+                </div>
+                <div class="col">
+                    <img src="app/images/adv8.png" alt="">
+                    <p>Металл</p>
+                </div>
+                <div class="col">
+                    <img src="app/images/adv9.png" alt="">
+                    <p>Флористика</p>
+                </div>
+                <div class="col">
+                    <img src="app/images/adv10.png" alt="">
+                    <p>Дополнительные элементы</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="working">
+        <div class="container">
+        <h2>Как мы работаем?</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6"><img src="app/images/step1.png" alt="Шаг 1"></div>
+                <div class="col-lg-3 col-md-3 col-sm-6"><img src="app/images/step2.png" alt="Шаг 2"></div>
+                <div class="col-lg-3 col-md-3 col-sm-6"><img src="app/images/step3.png" alt="Шаг 3"></div>
+                <div class="col-lg-3 col-md-3 col-sm-6"><img src="app/images/step4.png" alt="Шаг 4"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6"><img src="app/images/step8.png" alt="Шаг 8"></div>
+                <div class="col-lg-3 col-md-3 col-sm-6"><img src="app/images/step7.png" alt="Шаг 7"></div>
+                <div class="col-lg-3 col-md-3 col-sm-6"><img src="app/images/step6.png" alt="Шаг 6"></div>
+                <div class="col-lg-3 col-md-3 col-sm-6"><img src="app/images/step5.png" alt="Шаг 5"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6"><img src="app/images/step9.png" alt="Шаг 9"></div>
+                <div class="col-lg-3 col-md-3 col-sm-6"><img src="app/images/step10.png" alt="Шаг 10"></div>
+                <div class="col-lg-3 col-md-3 col-sm-6"><img src="app/images/step11.png" alt="Шаг 11"></div>
+                <div class="col-lg-3 col-md-3 col-sm-6"><img src="app/images/step12.png" alt="Шаг 12"></div>
+            </div>
+            <p>Заполните бриф, и мы подготовим макет, максимально соответствующий вашим пожеланиям!</p>
+            <div class="btn-red get-brief">Заполнить бриф и получить макет</div>
+        </div>
+    </section>
+    <section class="technologies">
+        <div class="container">
+            <h2>Какие технологии мы используем?</h2>
+            <p>Сотрудничество QBA MEDIA с лабораториями инновационных технологий позволяет нашим клиентам выделиться на фоне конкурентов на любой выставке за счет применения интерактивных технологий и современных методов рекламы.</p>
+            <div class="row videos">
+                <div class="col">
+                    <div data-type="youtube" data-video-id="F9_MDwNOlso"></div>
+                    <p>Интерактивная стена</p>
+                </div>
+                <div class="col">
+                    <div data-type="youtube" data-video-id="F9_MDwNOlso"></div>
+                    <p>Виртуальный промоутер</p>
+                </div>
+                <div class="col">
+                    <div data-type="youtube" data-video-id="F9_MDwNOlso"></div>
+                    <p>Голографическая пирамида</p>
+                </div>
+                <div class="col">
+                    <div data-type="youtube" data-video-id="F9_MDwNOlso"></div>
+                    <p>Интерактивный стол</p>
+                </div>
+                <div class="col">
+                    <div data-type="youtube" data-video-id="F9_MDwNOlso"></div>
+                    <p>Инстапринтер</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="clients">
+        <div class="container">
+            <h2>Наши клиенты</h2>
+            <p>С 2004 года нами выполнено более 200 проектов в 22 городах России, а также в Европе и Азии.</p>
+            <div class="row">
+                <div class="col"><img src="app/images/client1.png" alt="Наш клиент 'Весь мир'"></div>
+                <div class="col"><img src="app/images/client2.png" alt="Наш клиент 'INVITRO'"></div>
+                <div class="col"><img src="app/images/client3.png" alt="Наш клиент 'TOMAHAWK'"></div>
+                <div class="col"><img src="app/images/client4.png" alt="Наш клиент 'ЦАРИЦЫНО'"></div>
+                <div class="col"><img src="app/images/client5.png" alt="Наш клиент 'Жилищный Капитал'"></div>
+                <div class="col"><img src="app/images/client6.png" alt="Наш клиент 'Helios'"></div>
+                <div class="col"><img src="app/images/client7.png" alt="Наш клиент 'Glubina'"></div>
+                <div class="col"><img src="app/images/client8.png" alt="Наш клиент 'Bopos'"></div>
+            </div>
+        </div>
+    </section>
+    <section class="contacts">
+        <div class="container">
+            <h2>Как нас найти?</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <img src="app/images/contact1.png" alt="Адрес">
+                    <p>г. Москва, Нагорный пр-д, д. 7</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <img src="app/images/contact2.png" alt="Телефон">
+                    <p>+7 (495) 668-36-55</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <img src="app/images/contact3.png" alt="Email">
+                    <p>qbaexpo@qba.ru</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <img src="app/images/contact4.png" alt="Instagram">
+                    <p>Смотрите все наши работы и новости компании в Instagram!</p>
+                </div>
+            </div>
+            <p>Остались вопросы? Заполните форму и в течение 5 минут получите ответ специалиста!</p>
+            <form action="subm.php">
+                <input type="text" class="name" placeholder="Имя" required>
+                <input type="text" class="phone" placeholder="Телефон" required>
+                <input type="submit" value="Отправить">
+            </form>
+        </div>
+    </section>
+    <section class="map">
+        <div id="map"></div>
+    </section>
+    <footer></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="src/assets/jquery.fancybox.js"></script>
+    <script src="https://use.fontawesome.com/958f7b70ff.js"></script>
+    <script src="src/assets/owl.carousel.min.js"></script>
+    <script src="src/assets/plyr.js"></script>
+    <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="app/js/script.js"></script>
+</body>
+</html>

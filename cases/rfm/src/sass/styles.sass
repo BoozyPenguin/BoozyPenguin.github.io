@@ -1,0 +1,675 @@
+$sans: 'Open Sans', Helvetica, Arial, sans-serif
+@import "../../src/assets/assets.css";
+@import "../../src/assets/fonts.css";
+@import "../../src/assets/grid.min.css";
+@import url(//db.onlinewebfonts.com/c/cd0381aa3322dff4babd137f03829c8c?family=Tahoma);
+/* Базовые стили: clearfix, сбросы и т.д. */
+.clearfix:after
+    content: ""
+    display: table
+    clear: both
+body
+    margin: 0
+    padding: 0
+    overflow-x: hidden
+    position: relative
+    font-size: 15px
+    color: #333
+    font-family: $sans
+    font-weight: 600
+*
+    margin: 0
+    padding: 0
+a
+    color: inherit
+    text-decoration: none
+ul
+    list-style-type: none
+li
+    display: inline-block
+.button
+    padding: 6px 30px 0
+    height: 36px
+    background-color: #e4251e
+    display: inline-block
+    color: #fff
+    cursor: pointer
+    border-radius: 3px
+    box-shadow: 0 1px 0 rgba(129,33,30,.74)
+    font-weight: 600
+    font-family: inherit
+    border: none
+textarea, input[type="text"]
+    border: 1px solid #e6e6e6
+    padding: 10px 18px
+    background-color: #f3f3f3
+    margin: 12px 0
+    border-radius: 3px
+    font-family: inherit
+textarea
+    resize: none
+    height: 135px
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder
+    color: #333
+    opacity: 1
+input:-moz-placeholder,
+textarea:-moz-placeholder
+    color: #333
+    opacity: 1
+input::-moz-placeholder,
+textarea::-moz-placeholder
+    color: #333
+    opacity: 1
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder
+    color: #333
+    opacity: 1
+/* Стили для модальных окон */
+.modal
+    width: 100%
+    height: 100vh
+    position: fixed
+    background-color: rgba(0,0,0,.78)
+    z-index: 99999
+    display: flex
+    justify-content: center
+    align-items: center
+.inner-modal
+    position: relative
+    padding: 28px 36px
+    background-color: #fff
+    input[type="submit"]
+        padding-top: 0
+        padding-bottom: 0
+    form
+        margin-top: 32px
+    h3
+        font-weight: 600
+        color: #08526d
+        font-size: 1.33em
+        border-bottom: 3px solid #e42922
+        padding-bottom: 10px
+    input[type="text"], textarea
+        display: block
+        width: 335px
+        margin: 0 0 12px 0
+        font-size: 0.86em
+.close-modal
+    width: 24px
+    height: 24px
+    background: url(../images/close-modal.png) no-repeat center center
+    position: absolute
+    top: -39px
+    right: -35px
+    cursor: pointer
+/* === Шапка === */
+header
+    width: 100%
+    min-height: 150px
+    background: url(../images/header-bg.png) no-repeat center center
+    background-size: 100% 100%
+    padding: 30px 0 55px
+    position: relative
+    margin-bottom: 55px
+.logo
+    width: 315px
+    height: 63px
+    background: url(../images/logo.png) no-repeat center center
+    background-size: contain
+header .contacts, footer .contacts
+    font-size: 0.93em
+    .icon
+        background: url(../images/contacts-icons.png) no-repeat center center
+        background-position: 0 center
+        width: 17px
+        height: 14px
+        display: inline-block
+        vertical-align: middle
+    div:nth-child(2) .icon
+        background-position-x: -17px
+    span
+        vertical-align: middle
+        padding-left: 13px
+.phone
+    font-size: 1.6em
+    font-weight: 700
+    background: url(../images/phone.png) no-repeat left center
+    padding-left: 35px
+    margin-right: 20px
+.call-me *
+    vertical-align: middle
+header nav, footer nav
+    font-weight: 700
+    font-size: 0.93em
+    color: #fff
+header nav
+    position: absolute !important
+    bottom: -25px
+    left: 50%
+    transform: translateX(-50%)
+    border-radius: 2px
+header nav li, footer nav li
+    background-color: #085570
+    height: 50px
+    text-align: center
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    transition: .2s ease-in-out
+    &:not(.active-item):hover
+        background-color: #427f94
+header nav li
+    width: 100%
+    cursor: pointer
+    margin: 0 1px
+    transition: .2s ease-in-out
+    &.active-item
+        background-color: #e42922
+        box-shadow: 0 1px 0 rgba(129,33,30,.74)
+        border-top-left-radius: 2px
+        border-bottom-left-radius: 2px
+header nav ul, footer nav ul
+    display: flex
+    background-color: #085570
+header nav ul
+    border-radius: 2px
+    box-shadow: 0 1px 0 rgba(65,72,78,.74)
+/* === Сайдбар === */
+.sidebar
+    box-shadow: 0 12px 38px rgba(5,62,83,.19)
+    padding-left: 0
+    padding-right: 0
+    img
+        float: left
+        margin-right: 15px
+    li
+        width: 100%
+        display: block
+    > ul
+        padding-top: 0.1px
+    > ul > li
+        margin-top: 20px
+        > div
+            text-transform: uppercase
+            font-size: 1.13em
+            color: #08536e
+            font-weight: 700
+            width: calc(100% - 36px)
+            margin-left: auto
+            margin-right: auto
+            border-bottom: 1px solid #9cbbc6
+            padding-bottom: 8px
+        li
+            padding-left: 40px
+            font-size: 0.93em
+            font-weight: 400
+            padding-top: 14px
+            padding-bottom: 14px
+            border-bottom: 1px solid #fff
+            border-top: 1px solid #fff
+            display: flex
+            align-items: center
+            color: #000
+            cursor: pointer
+            line-height: 22px
+            transition: .2s ease-in-out
+            transition-property: background-color, border-color, color, border-left
+            &:not(:first-child)
+                border-bottom: 1px solid #fff
+                border-top: 1px solid #f2f2f2
+            &:not(.active-item):hover
+                background-color: #085571
+                color: #fff
+                padding-top: 15px
+                padding-bottom: 15px
+                padding-left: 38px
+                border: none
+                border-left: 7px solid #e4241d
+                a:before
+                    left: -26px
+            &.active-item
+                background-color: #e6eef1
+                color: #085571
+                border-color: #dae2e5
+                a:before
+                    background-position-x: -6px
+                + li:not(:hover)
+                    border-color: rgba(255,255,255,0)
+            a
+                position: relative
+                &:before
+                    content: ''
+                    display: block
+                    width: 6px
+                    height: 6px
+                    background: url(../images/marks.png) no-repeat 0 center
+                    top: 50%
+                    margin-top: -3px
+                    left: -22px
+                    position: absolute
+/* === Стили для основного контента === */
+.main-content
+    background: url(../images/page-bg.png) no-repeat center bottom
+    background-size: contain
+.calc
+    padding: 20px 0 20px 80px
+    background: #08536e url(../images/calc-bg.png) no-repeat -20px center
+    h1
+        text-transform: uppercase
+        color: #fff
+        font-size: 1.13em
+        font-weight: 700
+        border-bottom: 1px solid #e42b24
+        display: inline
+.menu-item
+    > p
+        font-size: 1.33em
+        color: #08526d
+        padding-bottom: 20px
+        border-bottom: 2px solid #e42922
+        margin: 40px 0 30px
+    input[type="text"], textarea
+        display: block
+        width: 100%
+        font-family: inherit
+        font-size: 0.86em
+        color: #333
+    .button
+        font-size: 0.86em
+        padding: 0 30px
+    .review
+        padding-bottom: 35px
+        margin-bottom: 31px
+        border-bottom: 1px solid #e5e5e5
+        p
+            color: #e42a23
+            padding-left: 37px
+            height: 23px
+            background: url(../images/review-icon.png) no-repeat left center
+            margin-bottom: 14px
+        span
+            color: #222
+            font-size: 0.93em
+            line-height: 22px
+            display: inline-block
+.play-button
+    text-align: center
+    padding: 8px 21px
+    display: inline-block
+    border: 1px solid #e42b24
+    border-radius: 3px
+    cursor: pointer
+    margin-left: 3px
+    p
+        font-size: 0.93em
+        color: #e42c25
+        display: inline
+        padding-right: 22px
+        height: 12px
+        background: url(../images/all-icon.png) no-repeat right center
+.main-content > .container > .row > .col-lg-4
+    padding-right: 49px
+    padding-left: 0
+.main-content > .container > .row > div.content
+    padding-left: 49px
+    padding-right: 0
+.content
+    h1
+        color: #08526d
+        font-size: 2.13em
+        font-weight: 600
+        position: relative
+        margin-bottom: 14px
+        &:after
+            content: ''
+            display: block
+            position: absolute
+            width: 30px
+            height: 4px
+            background-color: #fad4d3
+            border-radius: 3px
+            bottom: -10px
+            left: 0
+    h2
+        color: #08526d
+        font-size: 1.46em
+        font-weight: 600
+        margin-top: 76px
+        margin-bottom: 25px
+        padding-left: 22px
+        position: relative
+        &:before
+            content: ''
+            position: absolute
+            left: 0
+            display: block
+            width: 4px
+            height: 17px
+            top: 50%
+            margin-top: -8.5px
+            background-color: #e42a23
+            border-radius: 2px
+    > p
+        line-height: 22px
+        margin-top: 26px
+    .slide
+        width: 100%
+        position: relative
+        margin-top: 35px
+        .description
+            position: absolute
+            bottom: 42px
+            left: 1px
+            padding: 9px 10px 9px 21px
+            background: rgba(0,0,0,.76)
+            color: #fff
+            border-radius: 2px
+            p
+                font-size: 1.33em
+                display: inline-block
+                vertical-align: middle
+        .button
+            margin-left: 21px
+            vertical-align: middle
+        img
+            width: 100%
+.characteristics
+    p
+        margin-bottom: 13px
+        span
+            font-weight: 700
+.image-work
+    img
+        width: 100%
+.download-buttons
+    display: flex
+    justify-content: space-between
+    margin-top: 23px
+    div
+        margin: 0 15px
+        padding: 10px 30px 10px 24px
+        border: 2px solid #cedde2
+        border-radius: 3px
+        display: flex
+        justify-content: space-between
+        align-items: center
+    img
+        flex: none
+        width: 40px
+        height: 33px
+    p
+        color: #08536e
+        font-size: 0.93em
+        font-weight: 700
+        margin-left: 21px
+        a
+            border-bottom: 1px solid #f7bfbd
+.table-container
+    width: 100%
+    overflow: auto
+    -webkit-overflow-scrolling: touch
+    box-shadow: 0 12px 38px rgba(5,62,83,.19)
+.price
+    width: 100%
+    td
+        padding: 0 30px
+        color: #000
+        font-weight: 400
+        font-size: 0.93em
+        height: 50px
+    tr
+        transition: .2s linear
+    tr:not(:first-child):hover
+        background-color: #f2f2f2
+    tr:first-child
+        text-transform: uppercase
+        td
+            background-color: #0e5670
+            font-weight: 700
+            color: #fff
+        td:first-child
+            border-top-left-radius: 4px
+        td:last-child
+            border-top-right-radius: 4px
+.req-call
+    background-color: #08536e
+    padding: 10px 30px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    color: #fff
+    border-radius: 3px
+    margin-top: 30px
+    p
+        font-size: 0.93em
+        text-transform: uppercase
+        font-weight: 700
+    .call-me
+        flex: none
+    .button
+        margin-left: auto
+        margin-right: auto
+.block-char
+    display: flex
+    justify-content: space-between
+    align-items: start-end
+    margin-top: 76px
+    h2
+        margin-top: 0
+.systems-slider .slide
+    margin-top: 0 !important
+#bx-pager
+    padding: 0 13px 13px
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    background: url(../images/pager-bg.png) no-repeat center bottom
+    background-size: cover
+    a
+        display: inherit
+        margin-top: 9px
+        background: #0e5670
+        border-radius: 3px
+        transition: .2s ease-in-out
+        box-shadow: 0 0 0 3px transparent
+        &:hover, &.active
+            background: #fff
+            box-shadow: 0 0 0 3px #e42a23
+            border-radius: 1px
+            img
+                opacity: 1
+    a:not(:last-child)
+        margin-right: 12px
+    img
+        width: 120px
+        height: 62px
+        border-radius: 3px
+        opacity: .52
+        transition: .2s ease-in-out
+.heading
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: 76px
+    margin-bottom: 35px
+    h2
+        margin: 0
+.materials
+    .col-lg-4
+        padding: 0 14px
+.material
+    text-align: center
+    background-color: #f1f5f6
+    padding-bottom: 27px
+    box-shadow: 0 1px 1px rgba(8,82,109,.10)
+    border-radius: 3px
+    h3
+        color: #08526d
+        font-weight: 600
+        font-size: 1.46em
+        padding: 0 20px
+        margin-top: 10px
+        display: inline-block
+    img
+        width: 100%
+        margin-top: 14px
+    p
+        font-weight: 700
+        color: #e42b24
+        margin-top: 8px
+    .button
+        margin-top: 16px
+.order
+    padding: 33px 29px 31px 24px
+    background-color: #fff
+    border-top: 2px solid #e42922
+    margin-top: 36px
+    margin-bottom: 70px
+    box-shadow: 0 12px 38px rgba(5,62,83,.19)
+    > p, span
+        color: #08526d
+    span
+        font-size: 0.93em
+        display: inline-block
+    form
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-top: 30px
+    > p
+        font-size: 1.06em
+        font-weight: 700
+    > div
+        margin-top: 20px
+        display: flex
+        align-items: center
+    textarea, textarea + div
+        margin: 0 10px
+        align-items: center
+    p.number
+        color: #e4241d
+        font-size: 2.66em
+        flex: none
+    textarea
+        width: 100%
+        margin: 0
+    input[type="text"]
+        width: 100%
+        margin: 0 0 12px 0
+    input, textarea
+        font-size: 0.86em
+    input.button
+        padding-top: 0
+        padding-bottom: 0
+        display: block
+/* === Подвал === */
+footer nav
+    width: 100%
+    display: flex
+    justify-content: center
+    background-color: #085570
+    min-height: 50px
+footer nav li
+    padding: 0 55px
+    position: relative
+    &:not(:first-child):before
+        content: ''
+        position: absolute
+        display: block
+        width: 1px
+        height: 17px
+        background-color: #136f90
+        left: -0.5px
+        top: 50%
+        margin-top: -8.5px
+        z-index: 99
+    &.active-item, &:hover
+        &:before
+            display: none
+        + li:before
+            display: none
+footer nav li.home
+    padding: 0 40px
+footer nav li.active-item
+    background-color: #e4241d
+footer nav ul
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+footer .logo
+    background-image: url(../images/logo-2.png)
+footer
+    background: url(../images/footer-bg.png) no-repeat center center
+    background-size: cover
+footer > .container
+    min-height: 120px
+    padding-bottom: 30px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    color: #fff
+.logo-a1
+    width: 29px
+    height: 21px
+    background: url(../images/logo-a1.png) no-repeat center center
+    display: inline-block
+.creating-site
+    margin-top: 9px
+    display: flex
+    justify-content: flex-end
+    a
+        font-family: 'Tahoma', Arial, sans-serif
+        border-bottom: 1px solid #fff
+        letter-spacing: 0.5px
+        font-weight: normal
+        margin-left: 10px
+/* === Категория === */
+.catalog-materials
+    > div
+        margin-bottom: 20px
+.kind
+    margin-top: 24px
+    h3
+        font-weight: 700
+        text-transform: uppercase
+        color: #08526d
+        font-size: 1em
+        border-bottom: 1px solid #f4a9a6
+        width: 190px
+        padding-bottom: 8px
+    p
+        margin-top: 12px
+.advantages
+    display: flex
+    justify-content: space-between
+    > div:first-child
+        border-right: 1px solid #e5e5e5
+        padding-right: 40px
+    > div:last-child
+        padding-left: 40px
+    > div > div
+        display: flex
+        align-items: flex-start
+        height: 90px
+        &:first-child
+            border-bottom: 1px solid #e5e5e5
+        &:last-child
+            align-items: flex-end
+        > div
+            margin-left: 23px
+    p
+        font-size: 1.33em
+        color: #e42922
+        text-transform: uppercase
+        line-height: 22px
+    span
+        display: inline-block
+        padding: 4px 10px
+        background-color: #08536e
+        color: #fff
+        font-size: 0.86em
+        border-radius: 3px
+        margin-top: 10px

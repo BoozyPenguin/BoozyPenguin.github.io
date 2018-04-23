@@ -1,0 +1,169 @@
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400,500,700,900&subset=cyrillic,cyrillic-ext');
+
+
+html, body{
+	font-family: 'Fira Sans', sans-serif;
+}
+
+a:active, a:focus { outline: none; }
+
+input, textarea {outline:none;}
+input:active, textarea:active {outline:none;}
+:focus {outline:none;}
+textarea {resize:none;}
+textarea {resize:vertical;}
+textarea {resize:horizontal;}
+
+#container {
+	float: left;
+    width: 580px;
+    padding: 10px;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+}
+
+
+#frame {
+	position:absolute;
+	z-index:0;
+	width:739px;
+	height:341px;
+	top:-3px;
+	left:-80px;
+}
+
+#slides {
+    height: 470px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+#slides .next,#slides .prev {
+	transition: 0.5s;
+	position: absolute;
+	top: 189px;
+	left: 50px;
+    width: 47px;
+    height: 98px;
+    display: block;
+    z-index: 101;
+}
+
+.next:hover, .prev:hover{
+	opacity: 0.2;
+}
+
+.slides_container {
+    width: 1343px;
+    height: 470px;
+	overflow:hidden;
+	position:relative;
+}
+
+#slides .next {
+	left: 1263px;
+}
+
+.pagination {
+	margin:26px auto 0;
+	width:100px;
+}
+
+.pagination li {
+	float:left;
+	margin:0 1px;
+}
+
+.pagination li a {
+	display:block;
+	width:12px;
+	height:0;
+	padding-top:12px;
+	background-image:url(../img/pagination.png);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+
+.pagination li.current a {
+	background-position:0 -12px;
+}
+
+.caption {
+	position:absolute;
+	bottom:-35px;
+	height:30px;
+	padding:5px 20px 0 20px;
+	background:#000;
+	background:rgba(0,0,0,.5);
+	width:540px;
+	font-size:1.3em;
+	line-height:1.33;
+	color:#fff;
+	border-top:1px solid #000;
+	text-shadow:none;
+}
+
+/* My styles */
+
+.slides_container img{
+	width: 100%;
+}
+
+.slider_feed_background1 h1{
+	text-transform: uppercase;
+    color: #FFF;
+    position: relative;
+    bottom: 320px;
+    left: 441px;
+    font-size: 45px;
+    text-shadow: 2px 2px rgba(0,0,0,0.2);
+}
+
+.slider_feed_background1 h2{
+	color: #FFF;
+    position: relative;
+    bottom: 170px;
+    left: 56px;
+    font-size: 24px;
+}
+
+.slider_feed_background1 h3{
+	color: #FFF;
+    position: relative;
+    bottom: 162px;
+    left: 56px;
+    font-size: 14px;
+    letter-spacing: 0.7px;	
+}
+
+.slider_feed_background2 h1{
+	text-transform: uppercase;
+    color: #FFF;
+    position: relative;
+    bottom: 320px;
+    left: 441px;
+    font-size: 45px;
+    text-shadow: 2px 2px rgba(0,0,0,0.2);
+}
+
+.slider_feed_background2 h2{
+	color: #FFF;
+    position: relative;
+    bottom: 170px;
+    left: 56px;
+    font-size: 24px;
+}
+
+.slider_feed_background2 h3{
+	color: #FFF;
+    position: relative;
+    bottom: 162px;
+    left: 56px;
+    font-size: 14px;
+    letter-spacing: 0.7px;	
+}

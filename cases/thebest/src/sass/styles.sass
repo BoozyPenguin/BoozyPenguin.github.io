@@ -1,0 +1,1096 @@
+$gray1: #f2f6f9;
+$gray2: #f0f0f0;
+$gray3: #bcbcbc;
+$gray4: #9a9a9a;
+$lightblue: #e1e9f2;
+$blue: #4b9eff;
+$dark: #1a2839;
+$green: #11e000;
+
+$proxima: 'ProximaNova-Regular', Tahoma, Verdana, sans-serif;
+$helvetica: 'HelveticaNeue', 'Helvetica', Arial, sans-serif;
+$lato: 'Lato-Regular', 'Lato', Arial, sans-serif;
+$lato_l: 'Lato-Light', 'Lato', Arial, sans-serif;
+$lato_b: 'Lato-Bold', 'Lato', Arial, sans-serif;
+$avenir: 'AvenirNext', 'Lato', Arial, sans-serif;
+$avenir_b: 'AvenirNext-Bold', 'AvenirNext', Arial, sans-serif;
+
+@import "../../src/assets/fonts.css";
+
+html
+    font-size: 40px
+body
+    width: 100%
+    height: 100%
+    margin: 0
+    padding: 0
+    background: $gray1
+    font-family: $proxima
+    overflow-x: hidden
+*
+    margin: 0
+    padding: 0
+h1, h2, h3, h4, p
+    font-weight: normal
+a
+    text-decoration: none
+    color: inherit
+h1
+    color: $blue
+    font-size: 3.71rem
+    line-height: 2.76rem
+    font-family: $helvetica
+h3
+    color: #bcbcbc
+    font-size: 1.17rem
+    letter-spacing: 0.21rem
+    font-family: $helvetica
+input, textarea
+    outline: none
+.center
+    text-align: center
+.heading
+    padding-top: 3.82rem
+    h3
+        margin-top: 0.11rem
+form
+    input, a
+        display: block
+        margin: 0 auto
+        text-align: center
+        font-size: 1.05rem
+        letter-spacing: -0.01rem
+    input
+        width: 100%
+        border: none
+        padding: 1.05rem 0.47rem
+        border-radius: 1.76rem
+    input[type="text"], input[type="password"]
+        margin: 1.05rem 0
+        color: #686868
+    input[type="submit"]
+        cursor: pointer
+        background-color: $blue
+        color: #fff
+        font-size: 1.05rem
+        margin-bottom: 2.35rem
+    a
+        color: $blue
+.login-form
+    padding: 0 1.64rem
+    margin-top: 4.41rem
+    .recove-link
+        margin-top: 2.94rem
+    input[type="submit"]
+        margin-top: 7.05rem
+        -webkit-appearance: none
+.mobile-menu
+    cursor: pointer
+.mobile-menu > span
+    width: 2rem
+    height: 0.23rem
+    background-color: $blue
+    display: block
+    border-radius: 0.29rem
+    &:last-child
+        margin-top: 0.29rem
+    &:first-child
+        margin-bottom: 0.29rem
+        width: 1.64rem
+        position: relative
+        &:after
+            content: ''
+            display: inline-block
+            width: 0.23rem
+            height: 0.23rem
+            background-color: $blue
+            border-radius: 0.29rem
+            position: absolute
+            top: 0
+            right: -0.35rem
+.page
+    .top-nav
+        padding: 0.76rem 0.88rem
+        display: flex
+        justify-content: space-between
+        align-items: center
+        box-shadow: 0 0.15rem 2rem #d2d3d4
+.alert-block
+    padding: 1.88rem
+    background-color: #fafafa
+    margin: 1.64rem 0 0
+    border-radius: 1.76rem
+    box-shadow: 0 5px 10px $lightblue
+    text-align: center
+p.alert-title
+    color: #234774
+    font-size: 1.29rem
+    font-family: $lato
+.container
+    background: $gray1
+.content.content-padd
+    padding: 0 1.35rem
+.logo-alert
+    width: 9.82rem
+    height: 9.82rem
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 50%
+    margin: 1.76rem auto 2.17rem
+    background-color: #fff
+    box-shadow: 0 3px 6px #d6d6d6
+    img
+        width: 6.64rem
+        height: 6.41rem
+p.alert-desc
+    font-family: $lato_l
+    color: $gray4
+    font-size: 0.94rem
+    margin-bottom: 0.7rem
+    .alert-count
+        font-family: $lato_b
+        color: $blue
+.button
+    background-color: $blue
+    padding: 0.88rem 0.35rem
+    color: #fff
+    border-radius: 1.76rem
+    font-family: $lato_l
+    font-size: 1.11rem
+    cursor: pointer
+    -webkit-appearance: none
+.alert-block
+    .button
+        margin-top: 2.35rem
+.user-nav
+    background-color: #fafafa
+    overflow-x: hidden
+    .nav-menu
+        margin-top: 1.64rem
+    &:after
+        content: ''
+        width: 0.05rem
+        height: 100%
+        display: block
+        position: absolute
+        top: 0
+        right: 0
+        z-index: 999
+        box-shadow: 0 0 9px #5c779f
+        margin-right: -0.05rem
+    a:last-child li
+        border-bottom: none
+    li
+        height: 3.94rem
+        padding-left: 0.88rem
+        display: flex
+        align-items: center
+        font-size: 1.11rem
+        font-family: $lato
+        color: $dark
+        background-color: #fafafa
+        border-left: 4px solid #fafafa
+        transition: .2s linear
+        border-bottom: 1px solid #f4f4f4
+        span
+            width: 2.05rem
+            height: 1.76rem
+            margin-right: 2rem
+            background-size: 2.05rem 1.76rem !important
+        &.active-item, &:hover
+            background-color: $gray2
+            border-left: 4px solid $blue
+        &.home span
+            background: url(../images/icon-1.png) no-repeat center center
+        &.finance span
+            background: url(../images/icon-2.png) no-repeat center center
+        &.investments span
+            background: url(../images/icon-3.png) no-repeat center center
+        &.team span
+            background: url(../images/icon-4.png) no-repeat center center
+        &.transfer span
+            background: url(../images/icon-5.png) no-repeat center center
+        &.operations span
+            background: url(../images/icon-6.png) no-repeat center center
+        &.support span
+            background: url(../images/icon-7.png) no-repeat center center
+        &.settings span
+            background: url(../images/icon-8.png) no-repeat center center
+.user-info
+    padding: 0 1rem
+    margin-top: 1.58rem
+    display: flex
+    align-items: center
+    .name
+        margin-left: 0.88rem
+    p
+        color: #2f2f2f
+        font-size: 1.11rem
+        font-family: $lato
+    p.user-id
+        color: #b6b6b6
+        font-size: 0.94rem
+        margin-top: 0.29rem
+.user-pic
+    border-radius: 50%
+    width: 4.35rem
+    height: 4.35rem
+    img
+        width: 4.35rem
+        height: 4.35rem
+/* Swipe Menu */
+.slideout-menu
+    position: fixed
+    top: 0
+    bottom: 0
+    left: 0
+    width: 17.64rem
+    min-height: 100vh
+    overflow-y: scroll
+    -webkit-overflow-scrolling: touch
+    z-index: 0
+    display: none
+#menu, #menu + #main
+    transition: .5s linear
+#menu
+    transform: translateX(-17.64rem)
+.slideout-panel
+    position: relative
+    z-index: 1
+    will-change: transform
+    background-color: $gray1
+    min-height: 100vh
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel
+    overflow: hidden
+.slideout-open #menu
+    transform: translateX(0)
+    display: block !important
+.not-count
+    position: absolute
+    top: 0
+    right: 0
+    background-color: #ff5555
+    display: inline-block
+    width: .55rem
+    height: .55rem
+    border-radius: 50%
+.categories-list li > span
+    position: relative
+.cat-count
+    position: absolute
+    top: -.2rem
+    font-size: .7em
+    right: -.5rem
+    color: $blue
+.notifications
+    width: 2.35rem
+    height: 2.35rem
+    border-radius: 50%
+    background: url(../images/notification-icon.png) no-repeat center center #fff
+    background-size: 1.52rem 1.47rem
+    box-shadow: 0 0.11rem 0.29rem #d6e1ec
+    cursor: pointer
+    font-family: $lato_l
+    font-size: 1.1em
+    display: flex
+    align-items: center
+    position: relative
+    &.close-window
+        width: 8rem
+        border-radius: 3rem
+        box-shadow: 0 0.11rem 0.49rem #d6e1ec
+        background-position: right center
+        background-image: url(../images/close-icon.png)
+        background-size: 2.35rem 1.47rem
+        padding-left: 1.7rem
+.messages-block
+    margin-top: 0.58rem
+    padding: 0 1.64rem
+    height: calc(100vh - 13.52rem)
+    overflow-y: scroll
+    -webkit-overflow-scrolling: touch
+p.message-author
+    font-family: $avenir
+    font-size: 0.705rem
+    color: #3c3c3c
+    margin-bottom: 0.29rem
+    display: flex
+    justify-content: space-between
+    width: 100%
+    .author
+        padding-left: 1.76rem
+    .message-time
+        font-size: 1.3em
+        vertical-align: middle
+        color: #000
+div.message
+    margin-bottom: 1.47rem
+div.message-text
+    background-color: #fff
+    padding: 0.82rem 1.41rem
+    border-radius: 2.94rem
+    border-bottom-left-radius: 0px
+    font-family: $avenir
+    font-size: 0.82rem
+    color: #3c3c3c
+    width: auto
+    display: inline-block
+.message-attachment
+    background-color: $blue
+    padding: 0.58rem 1.17rem
+    border-radius: 1.76rem
+    color: #fff
+    font-size: 0.9rem
+    font-family: $avenir
+    margin-top: 0.58rem
+    cursor: pointer
+    display: block
+    width: 6.5rem
+.message:not(.my-message)
+    .message-attachment
+        border-top-left-radius: 0px
+.message.my-message
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    .message-attachment
+        border-top-right-radius: 0px
+    div.message-text
+        border-bottom-left-radius: 50px
+        border-bottom-right-radius: 0px
+    p.message-author
+        flex-direction: row-reverse
+        .author
+            padding-left: 0
+            padding-right: 1.47rem
+.messages-bottom-menu
+    width: 100%
+    min-height: 8.82rem
+    background-color: #fff
+    box-shadow: 0 -1px 20px #d6e1ec
+    text-align: center
+    z-index: 998
+.close-question
+    border-bottom: 1px solid #eceded
+    padding: 0.82rem 1.29rem
+    font-size: 0.94rem
+    font-family: $avenir
+    color: $blue
+    display: flex
+    justify-content: space-between
+    align-items: center
+    position: relative
+    cursor: pointer
+    .attach
+        width: 1.76rem
+        height: 1.76rem
+        background: url(../images/attach-icon.png) no-repeat center center
+        background-size: 1.76rem
+        display: inline-block
+.write-message
+    padding: 0 1.17rem
+    height: 5.64rem
+    display: flex
+    align-items: center
+    .button
+        width: 100%
+        font-size: 1.05rem
+        font-family: $avenir
+        position: relative
+        &:after
+            content: ''
+            width: 2rem
+            height: 2rem
+            background: rgba(255,255,255,0)
+            border-radius: 50%
+            border: 1px solid #fff
+            position: absolute
+            right: 0.47rem
+            top: 0.47rem
+            background: url(../images/arrow.png) no-repeat center center
+            background-size: 0.41rem 0.52rem
+    textarea
+        resize: none
+        border: none
+        background: none
+        width: 100%
+        height: 80%
+        font-family: $avenir
+        font-size: 0.88rem
+        color: #3c3c3c
+        padding: 0.58rem
+.title-page
+    text-align: center
+    font-family: $lato_l
+    font-size: 1.29rem
+    line-height: 1.23rem
+.levels
+    margin-top: 1.5rem
+.level
+    background-color: #fff
+    border: 1px solid #d6e1ec
+    color: #5c5c5c
+    text-align: center
+    margin: 0 auto
+    min-height: 23.41rem
+    width: 65%
+    max-width: 20rem
+    .level-heading
+        font-family: $lato
+        font-size: 1.05rem
+        padding: 0.88rem 0
+        border-bottom: 1px solid #f8f8f8
+    p span
+        display: block
+        color: $blue
+        margin-top: 0.29rem
+.owl-prev, .owl-next
+    width: 3rem
+    height: 3rem
+    position: absolute
+    background: rgba(255,255,255,0)
+    background-size: 100%
+    top: 50%
+    margin-top: -1.5rem
+.owl-prev
+    left: .3rem
+    background-image: url(../images/arrow-left.png)
+.owl-next
+    right: .3rem
+    background-image: url(../images/arrow-right.png)
+.team-info
+    border-top: 1px solid #fbfbfb
+    border-bottom: 1px solid #f8f8f8
+    padding: 1rem 0.58rem
+    p
+        margin-bottom: 0.35rem
+.price-info
+    border-top: 1px solid #fbfbfb
+    padding: 1.17rem 0.58rem
+    p
+        margin-bottom: 0.35rem
+.price-info, .team-info
+    font-size: 1rem
+.info-block
+    background: $lightblue
+    color: #fff
+    font-size: 1.17rem
+    text-align: center
+    padding: 0.7rem 0 0.7rem
+    margin-top: 2rem
+    p
+        font-family: $lato_l
+        span
+            font-family: $lato_b
+            padding-left: 0.23rem
+.more-info
+    background-color: $blue
+    color: #fff
+    text-align: center
+    height: 3rem
+    cursor: pointer
+    box-shadow: 0 -3px 12px #a5adb6
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    i
+        font-size: 1.7rem
+        width: 100%
+        line-height: 1rem
+    p
+        font-size: 0.9rem
+        font-family: $lato_l
+.content
+    position: relative
+    margin-top: 2rem
+.comission
+    height: 8rem
+.more-info-block
+    background: $gray1
+    text-align: center
+    position: absolute
+    width: 100%
+    z-index: 1
+    bottom: 0
+    .inner > p
+        color: $blue
+        font-family: $lato_l
+        font-size: 0.94rem
+        line-height: 1.76rem
+        margin-top: 10px
+        + i
+            color: $blue
+            font-size: 1.9rem
+    .inner
+        padding: 0.58rem 2.58rem 0
+        box-shadow: 0 -3px 12px $gray3
+.info-buttons
+    .button
+        max-width: 35.29rem
+        margin: 0.7rem auto
+        background: #fff
+        color: $blue
+        border-radius: 0.7rem
+        box-shadow: 0 3px 6px #d6e1ec
+    .button:last-child
+        background: $blue
+        color: #fff
+.referal-block
+    position: relative
+    display: inline-block
+    margin: 0 auto
+.ref-info
+    p
+        font-size: 1.1rem
+        font-family: $lato_l
+        margin-top: 1.17rem
+    .ref-link
+        border: none
+        width: 10.82rem
+        padding: 0.58rem 0 0.41rem 1.41rem
+        border-radius: 0.82rem
+        font-size: 0.86rem
+        font-family: $lato_l
+        background: #e2e2e2
+        margin: 0.52rem 0
+        text-align: left
+        cursor: default
+        display: flex
+        justify-content: space-between
+    .icon-copy
+        display: inline-block
+        width: 1.05rem
+        height: 1.05rem
+        background:  url(../images/save-icon.png) no-repeat center center
+        background-size: 100%
+        position: absolute
+        top: 50%
+        margin-top: -0.525rem
+        right: 1rem
+.button-copy
+    background-color: $blue
+    color: #fff
+    width: 7.94rem
+    padding: 0.58rem 0
+    text-align: center
+    margin: 1.05rem auto 1.05rem 0.58rem
+    display: inline-block
+    cursor: pointer
+    font-size: 0.8rem
+    border-radius: 1.17rem
+    font-family: $lato_l
+.success-alert
+    font-size: 0.91rem
+    font-family: $lato
+.page-title
+    font-family: $lato
+    font-size: 1rem
+ul.categories-list
+    width: 100%
+    display: flex
+    justify-content: space-between
+    list-style-type: none
+    font-size: 0.82rem
+    box-shadow: 0 0 10px #d6e1ec
+    margin-top: 0.88rem
+    li
+        display: block
+        flex-basis: 100%
+        text-align: center
+        padding: 0.52rem 0
+        background-color: #fff
+        border-bottom: 1px solid #f3f6f9
+        border-left: 1px solid #fafafa
+        border-right: 1px solid #f4f4f4
+        cursor: pointer
+        &:first-child
+            border-right: 1px solid #eaedf2
+            border-left: 0
+        &:last-child
+            border-left: 1px solid #fafafa
+            border-right: 0
+        &.active, &:hover
+            background-color: #f1f4f9
+            border-bottom-color: #f1f4f9
+.day-pub
+    text-align: center
+    font-size: 0.82rem
+    font-family: $lato
+    color: $gray3
+    margin-top: 1.76rem
+    padding-bottom: 0.82rem
+.article
+    background-color: #fff
+    border-radius: 1.29rem
+    padding-bottom: 0.94rem
+    overflow: hidden
+    box-shadow: 0 1px 15px #d6e1ec
+    margin-top: 1.47rem
+    margin-bottom: 1.17rem
+    > p
+        padding: 0 0.94rem
+        font-size: 0.82rem
+        font-family: $lato
+        margin-top: 0.52rem
+    .meta-info
+        padding: 0.76rem 0.94rem 0.47rem
+        background-color: #edf1f7
+        display: flex
+        justify-content: space-between
+        align-items: center
+        p:first-child
+            font-size: 0.82rem
+            font-family: $lato
+        p.time-pub
+            font-size: 0.58rem
+            color: $gray4
+.articles-block
+    padding: 0 0.94rem
+    overflow-y: scroll
+    -webkit-overflow-scrolling: touch
+    height: 30rem
+.finances-table, .table
+    border-radius: 0.35rem
+    overflow: hidden
+    margin-top: 1.5rem
+    margin-bottom: 1.47rem
+    box-shadow: 0 3px 14px #d6e1ec
+    .heading-row
+        padding: 1.05rem 0
+        text-align: center
+        font-size: 0.94rem
+        background-color: #edf1f7
+    .f-desc
+        background-color: #fff
+        padding: 1.29rem 1.58rem 0.05rem
+        font-family: $lato_l
+        font-size: 1.05rem
+        p
+            margin-bottom: 1.52rem
+.profile-info
+    background: #fff
+    padding: 1.17rem 0
+    border-radius: 1.76rem
+    box-shadow: 0 0 14px #d6e1ec
+    overflow: hidden
+    margin-top: 0.88rem
+    > p.profile-link
+        padding: 1.17rem 0
+        text-align: center
+        font-size: 0.88rem
+        color: $dark
+        border-bottom: 2px solid #f9f9f9
+        &:last-child
+            border-bottom: none
+.base-info
+    display: flex
+    align-items: center
+    padding: 0 0.58rem 1.11rem
+    border-bottom: 2px solid #f9f9f9
+    .user-pic
+        border-radius: 50%
+        overflow: hidden
+        position: relative
+        cursor: pointer
+    .overlay
+        width: 4.35rem
+        height: 4.35rem
+        background: url(../images/camera-icon.png) no-repeat center center rgba(0,0,0,.4)
+        background-size: 1.76rem 1.41rem
+        position: absolute
+        top: 0
+    p
+        font-size: 1.05rem
+        font-family: $lato
+        line-height: 1.47rem
+        margin-left: 2.35rem
+        span
+            font-size: 0.7rem
+            color: $gray4
+.button-sent
+    background-color: $blue
+    color: #fff
+    font-size: 0.88rem
+    font-family: $lato
+    border-radius: 1.76rem
+    padding: 0.94rem
+    text-align: center
+    cursor: pointer
+    margin-top: 4.7rem
+    margin-bottom: 1.17rem
+.ref-link-block
+    text-align: center
+    background-color: #fff
+    box-shadow: 0 1px 14px #d6e1ec
+    border-radius: 1.76rem
+    padding: 1.47rem
+    margin-top: 0.88rem
+    + .button
+        text-align: center
+        margin: 3.52rem auto 0
+        width: 80%
+    p.title-block
+        font-size: 1.17rem
+        font-family: $lato
+        margin-bottom: 2.64rem
+        + p
+            font-size: 1.17rem
+            font-family: $lato_l
+    .ref-name
+        background-color: #f5f5f5
+        color: #bcbcbc
+        padding: 0.58rem 0.88rem
+        display: block
+        text-align: left
+        border-radius: 1.76rem
+        margin-top: 0.7rem
+        font-family: $lato
+        font-size: 1.17rem
+        cursor: default
+        border: none
+        width: calc(100% - 1.76rem)
+    .button-copy-ref
+        background-color: $green
+        padding: 0.58rem
+        border-radius: 1.76rem
+        margin-top: 1.17rem
+        color: #fff
+        font-size: 1.17rem
+        cursor: pointer
+        font-family: $lato_l
+input[type="date"]
+    font-family: $lato
+    color: $blue
+.profile-edit
+    .inner-form
+        background-color: #fff
+        border-radius: 1.76rem
+        overflow-x: hidden
+        box-shadow: 0 1px 14px #d6e1ec
+        padding: 1.52rem 1.29rem
+        margin-top: 0.88rem
+        margin-bottom: 1.76rem
+        > p:first-child
+            text-align: center
+            font-size: 1.23rem
+            margin-bottom: 3rem
+    .button
+        text-align: center
+        margin-bottom: 2rem
+    input + p, label
+        color: $dark
+        font-family: $lato_l
+        font-size: 1.23rem
+        padding-left: 1.47rem
+        line-height: 1.35rem
+        display: block
+    input
+        font-size: 1.17rem
+    input[type="text"]
+        width: calc( 100% - 2.82rem )
+        background-color: #f5f5f5
+        text-align: left
+        padding: 0.88rem 1.41rem
+        margin: 0.88rem 0 1.47rem
+        font-family: $lato
+        border: none
+        border-radius: 1.76rem
+.file-field
+    display: none
+.file-label
+    background-color: #f5f5f5
+    display: inline-block !important
+    width: 8rem
+    height: 1.8rem
+    padding: .6rem .3rem 0 !important
+    text-align: center
+    border-radius: 1.76rem
+    font-family: $lato !important
+    font-size: .94rem !important
+    color: #686868
+    margin-top: .88rem
+    border: .05rem solid $gray3
+.file-name
+    font-size: .9rem
+    margin: .5rem
+    display: inline-block
+    color: $blue
+    max-width: 100%
+    overflow-x: hidden
+    vertical-align: middle
+.radio
+    vertical-align: top
+    width: 1rem
+    height: 1rem
+.radio + label
+    cursor: pointer
+    display: inline-block
+    margin: 1rem 0.58rem 0.88rem 1.47rem
+.radio:not(checked)
+    display: none
+.radio:not(checked) + label
+    width: 2.88rem
+    padding: 0.76rem 0
+    border-radius: 50%
+    text-align: center
+.radio:checked + label
+    background-color: $green
+    color: #fff
+.popup-window
+    position: absolute
+    background-color: rgba(0,0,0,.6)
+    width: 100%
+    height: 100vh
+    z-index: 99999
+    display: flex
+    justify-content: center
+    align-items: center
+    .inner-popup
+        width: 75%
+        height: 80%
+        background-color: #fff
+        padding: 1rem
+        border-radius: 1.4rem
+        position: relative
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+    .content-popup
+        height: 100%
+        overflow-y: scroll
+        -webkit-overflow-scrolling: touch
+    p
+        height: 100%
+        overflow-y: scroll
+        -webkit-overflow-scrolling: touch
+    .close-popup
+        width: 1.5rem
+        height: 1.5rem
+        cursor: pointer
+        position: absolute
+        color: #fff
+        font-size: 1.7rem
+        top: -1.5rem
+        right: -1.5rem
+    img
+        width: 100%
+        max-height: 100%
+        margin: 1.5rem 0
+.notifications-window
+    position: absolute
+    top: -100vh
+    transition: .4s linear
+    z-index: 999
+    overflow-y: scroll
+    -webkit-overflow-scrolling: touch
+    background-color: $gray1
+    .container
+        height: 100vh
+    &.opened-window
+        top: 0
+        box-shadow: 0 100vh 0 rgba(0,0,0,.3)
+    .page-title
+        width: 13rem
+        text-align: center
+input.search
+    width: 60%
+    max-width: 20rem
+    border: none
+    height: 2rem
+    font-size: .95rem
+    font-family: $lato_l
+    color: #2072d2
+    padding: 0 1rem
+    background: none
+    border-bottom: .09rem solid $blue
+    &::-webkit-input-placeholder
+        color: $blue
+    &:-ms-input-placeholder
+        color: $blue
+    &::-ms-input-placeholder
+        color: $blue
+    &::placeholder
+        color: $blue
+input.search + span
+    width: 1.6rem
+    height: 1.6rem
+    background: url(../images/search-icon.png) no-repeat center center
+    background-size: 100%
+    display: inline-block
+    vertical-align: middle
+    margin-left: .5rem
+.pagination
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+    padding: 0 3rem
+    margin-bottom: 2rem
+    div.page
+        display: flex
+        justify-content: center
+        align-items: center
+        font-family: $lato
+        margin: 0 .6rem
+        font-size: 1.2rem
+        width: 2.6rem
+        height: 2.6rem
+        background-color: #fff
+        border-radius: 50%
+        border: 1px solid $gray4
+        transition: .2s ease-in-out
+        &.current-page, &:hover
+            background-color: $blue
+            border-color: $blue
+            color: #fff
+        &.disabled:hover
+            background-color: #fff
+            border-color: $gray4
+            color: inherit
+.pagination div.page.disabled
+    background-color: rgba(255,255,255,0)
+    border: none
+.prev-page, .next-page
+    width: 1.6rem
+    height: 1.6rem
+    background-color: #f00
+    position: absolute
+    top: 50%
+    margin-top: -0.8rem
+.prev-page
+    left: 0
+    background: url(../images/pg-left.png)
+    background-size: 100%
+.next-page
+    right: 0
+    background: url(../images/pg-right.png)
+    background-size: 100%
+.button.show-more
+    text-align: center
+    margin: 2rem 1rem
+.go-back
+    span
+        width: 0.88rem
+        height: 1.52rem
+        background: url(../images/back-icon.png) no-repeat center center
+        background-size: 100%
+        vertical-align: middle
+    p
+        color: $blue
+        font-family: $lato
+        font-size: 1.1rem
+        margin-left: .5rem
+    span, p
+        display: inline-block
+h2
+    font-family: $proxima
+    font-size: 1.4rem
+    color: $dark
+h2.buy-stock
+    color: $blue
+    font-family: $lato_l
+    margin-top: 1.8rem
+.i-block
+    text-align: center
+    background-color: #fff
+    padding: 2.22rem
+    border-radius: 1.5rem
+    box-shadow: 0 .1rem 1rem #d2d3d4
+    width: 70%
+    max-width: 40rem
+    margin: 0 auto
+input[type="text"].stock-counter
+    width: calc(100% - 2.8rem)
+    border: none
+    padding: .8rem 1.4rem
+    background-color: #f5f5f5
+    border-radius: 1.1rem
+    font-size: 1.4rem
+    font-family: $lato
+    color: #c9c9c9
+    margin-top: 1.4rem
+    text-align: left
+input[type="submit"].buy-stock
+    border-radius: 1.1rem
+    font-size: 1.4rem
+    font-family: $lato_l
+    margin-top: 3.5rem
+    margin-bottom: 0
+    padding: .7rem 0
+    -webkit-appearance: none
+h2.history
+    margin-top: 3.5rem
+    text-align: center
+.history-table
+    border-radius: .9rem
+    box-shadow: 0 0.2rem 0.9rem #d9dee6
+    background-color: #fff
+    .list-row
+        background-color: #fff
+        padding: 1.2rem 1.5rem
+        font-family: $lato_l
+        font-size: 1.2rem
+    .list-row:not(:last-child)
+        border-bottom: .01rem solid $gray3
+    .data-row
+        background-color: #f6f8fb
+.logo-home
+    width: 10em
+    margin: 4.5em auto 0
+    img
+        width: 100%
+form.recovery
+    margin-top: 6em
+    p
+        color: #ff4b4b
+        text-align: center
+        font-size: 1.3em
+        font-family: $lato
+    input[type="text"]
+        width: calc(100% - 3.4rem)
+        background-color: #dddde3
+        color: #fff
+        text-align: left
+        padding: 1.3rem 1.7rem
+        font-family: $avenir
+        font-size: 1.5em
+        border-radius: 3em
+        margin-top: 2.5em
+        &::-webkit-input-placeholder
+            color: #fff
+        &:-ms-input-placeholder
+            color: #fff
+        &::-ms-input-placeholder
+            color: #fff
+        &::placeholder
+            color: #fff
+form.recovery input[type="submit"]
+    font-size: 1.3rem
+form.recovery input[type="submit"], .available-button
+    padding: 1.3rem 0
+    background-color: #00ceff
+    margin-top: 2.4rem
+    font-family: $avenir
+    text-align: center
+    border-radius: 3rem
+    color: #fff
+    -webkit-appearance: none
+.available-button
+    font-size: 0.9em
+p.profile-link.finances-info
+    > span
+        display: block
+        font-family: $lato
+        font-size: .9rem
+        padding: 0 1rem
+        &:not(:first-child)
+            margin-top: 1.4rem
+        span
+            color: $blue
+.available-button
+    box-shadow: 0 0.2rem 0.9rem #d9dee6
