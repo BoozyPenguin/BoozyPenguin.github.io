@@ -11,8 +11,25 @@ function listsEvent() {
         $('section.cases > div.' + itemCategory).fadeIn(600);
     });
 };
+window.onload = function heightCases() {
+    var arrImages = $('div.case'),
+        minHeight = 1000;
+    for(i = 0; i < arrImages.length; i++) {
+        var thisHeight = $(arrImages[i]).children('img').height();
+        if(thisHeight < minHeight)
+            minHeight = thisHeight
+    }
+    minHeight = minHeight/18;
+    minHeight = minHeight.toFixed(2);
+    if(minHeight > 18)
+        minHeight = Math.floor(Math.random() * (18 - 12 + 1)) + 12
+    else if(minHeight < 12)
+        minHeight = 12
+    $('section.cases div.case').css('height', minHeight + 'em');
+};
 showCases();
 listsEvent();
+heightCases();
 $('.case > .fas').click(function() {
     var href;
     if($(this).siblings('.heading').children('.paragraph').children('a').attr('data-slide'))
